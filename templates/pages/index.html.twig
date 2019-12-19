@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="row homepage">
+        <img src="{{ asset('build/homepage.png') }}" alt="Image de la page d'accueil" />
+        <div class="info-img">
+            <div>
+                <h2 class="counter" data-count="240">236</h2>
+                <p>Projets</p>
+            </div>
+            <div>
+                <h2 class="counter" data-count="250000">249996</h2>
+                <p>M2 construits</p>
+            </div>
+            <div>
+                <h2>+<span class="counter" data-count="20">16</span></h2>
+                <p>Années d'expériences</p>
+            </div>
+            <div>
+                <h2><span class="counter" data-count="53">49</span>/<span class="counter" data-count="47">43</span>%</h2>
+                <p>Logement neufs / Réhabilités</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({ countNum: $this.text()}).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 600,
+                    easing:'linear',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+                });
+
+
+
+        });
+    </script>
+{% endblock %}

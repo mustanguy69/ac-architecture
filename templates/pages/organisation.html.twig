@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Organisation{% endblock %}
+
+{% block body %}
+    <div class="row organisation-page">
+        <div class="col-6">
+            <p class="page-title">Organisation et moyens</p>
+            <p class="page-title"><br />Cloud</p>
+            <p>L&rsquo;agence dispose d&rsquo;un espace de stockage externalis&eacute; de type Cloud.<br />Cette plate-forme s&eacute;curis&eacute;e simplifie la diffusion et l&rsquo;&eacute;change des donn&eacute;es avec les intervenants du projet.</p>
+            <p class="page-title">Bim</p>
+            <p>Notre conception comprend une mod&eacute;lisation de nos projets en 3D. Cette maquette num&eacute;rique facilite les interactions entre les bureaux d&rsquo;&eacute;tudes et permet une meilleure synth&egrave;se des &eacute;l&eacute;ments techniques.</p>
+            <p class="page-title">Sauvegarde</p>
+            <p>Ce type de sauvegarde offre une garantie accrue de nos donn&eacute;es. Les &eacute;l&eacute;ments inscrits sur un disque sont instantan&eacute;ment copi&eacute;s sur un autre disque en secours en cas de d&eacute;faillance du premier.</p>
+            <p class="page-title">Comp&eacute;tences</p>
+            <p>Nos exp&eacute;riences professionnelles, ainsi que nos cursus individuels, nous permettent de disposer de comp&eacute;tences dans de nombreux domaines.<br />Nous int&eacute;grons d&egrave;s l&rsquo;esquisse la qualit&eacute; environnementale dans notre d&eacute;marche de conception. Nous intervenons dans la r&eacute;alisation de dossier technique de consultation. Nous assistons la ma&icirc;trise d&rsquo;ouvrage dans le choix des entreprises pour &eacute;tablir les march&eacute;s de travaux. Nous r&eacute;alisons, et assurons le suivi et la coordination des chantiers.</p>
+        </div>
+        <div class="col-6">
+            <img src="{{ asset('build/organisation.png') }}" />
+        </div>
+    </div>
+{% endblock %}

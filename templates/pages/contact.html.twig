@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <div class="row contact-page">
+        <div class="col-5">
+            <form method="post" action="">
+                <div class="natural-form">
+                    <p><span>Je représente une</span></p>
+                    <input type="text" placeholder="collectivité territoriale"/>
+                    <span>et je recherche un architecte</span>
+                    <p>
+                        <span>pour</span>
+                        <input type="text" placeholder="du suivi de chantier"/>
+                    </p>
+
+                </div>
+
+                <div class="indentity-form">
+                    <input type="text" placeholder="Nom"/>
+                    <input type="email" placeholder="Email"/>
+                </div>
+
+                <input type="submit" value="Soumettre" />
+            </form>
+        </div>
+        <div class="col-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.5500452320744!2d4.814546215826629!3d45.7601658216662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eba674a283b7%3A0x6947273e03f5f324!2s8%20Rue%20Pauline-Marie%20Jaricot%2C%2069005%20Lyon!5e0!3m2!1sfr!2sfr!4v1576679499284!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;padding-left: 15px" allowfullscreen=""></iframe>
+            <p>AC Architecture Ingénierie</p>
+            <p>8 rue Pauline-Marie-Jaricot, F-69005 Lyon</p>
+            <p>T. +33(0)4 37 41 12 30</p>
+            <p>contact@ac-architecture.fr</p>
+            <p>www.ac-architecture.fr</p>
+        </div>
+    </div>
+{% endblock %}

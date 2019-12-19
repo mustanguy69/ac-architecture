@@ -1,0 +1,37 @@
+<div class="row menu-container">
+    <div class="col-3">
+        <a href="{{ path('homepage') }}"><img src="{{ asset('build/logo.jpg') }}" alt="logo AC Architecture" class="logo"/></a>
+    </div>
+    <div class="menu-links col align-self-center text-right">
+        <div class="dropdown">
+            {% set agence = ["presentation", "equipe", "organisation"] %}
+            <a href="" id="agence-link" aria-haspopup="true" aria-expanded="false"
+               class="hvr-underline-from-center dropdown-toggle {% if app.request.get('_route') in agence %}active{% endif %}"
+               data-toggle="dropdown">
+                L'AGENCE
+            </a>
+            <div class="dropdown-menu sub-menu" aria-labelledby="agence-link">
+                <a href="{{ path('presentation') }}" class="sub-menu-link dropdown-item">Présentation</a>
+                <a href="{{ path('equipe') }}" class="sub-menu-link dropdown-item">Equipe</a>
+                <a href="{{ path('organisation') }}" class="sub-menu-link dropdown-item">Organisation</a>
+            </div>
+        </div>
+        <a href="{{ path('services') }}" class="hvr-underline-from-center {% if app.request.get('_route') == 'services' %}active{% endif %}">SERVICES</a>
+        <div class="dropdown">
+            {% set realisations = ["ehpad", "collectifs", "individuels", "cultuels", "equipements"] %}
+            <a href="" id="realisation-link" aria-haspopup="true" aria-expanded="false"
+               class="hvr-underline-from-center dropdown-toggle {% if app.request.get('_route') in realisations %}active{% endif %}" data-toggle="dropdown">
+                RÉALISATIONS
+            </a>
+            <div class="dropdown-menu sub-menu" aria-labelledby="realisation-link">
+                <a href="{{ path('ehpad') }}" class="sub-menu-link dropdown-item">EHPAD</a>
+                <a href="{{ path('collectifs') }}" class="sub-menu-link dropdown-item">Logements collectifs</a>
+                <a href="{{ path('individuels') }}" class="sub-menu-link dropdown-item">Logements individuels</a>
+                <a href="{{ path('cultuels') }}" class="sub-menu-link dropdown-item">Lieux cultuels</a>
+                <a href="{{ path('equipements') }}" class="sub-menu-link dropdown-item">Équipements</a>
+            </div>
+        </div>
+        <a href="{{ path('contact') }}" class="hvr-underline-from-center {% if app.request.get('_route') == 'contact' %}active{% endif %}">CONTACT</a>
+        <a href="{{ path('inspirations') }}" class="hvr-underline-from-center {% if app.request.get('_route') == 'inspirations' %}active{% endif %}">INSPIRATIONS</a>
+    </div>
+</div>

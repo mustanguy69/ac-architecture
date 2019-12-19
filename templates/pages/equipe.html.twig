@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}L'équipe{% endblock %}
+
+{% block body %}
+    <div class="row equipe-page">
+        <div class="col-6">
+            <p class="page-title">Equipe</p>
+            <p>L&rsquo;agence se compose de 6 personnalit&eacute;s. Chacune d&rsquo;entre elle participe &agrave; l&rsquo;&eacute;laboration du projet. Nos projets sont r&eacute;alis&eacute;s dans l&rsquo;&eacute;change et le partage. Cette collaboration enrichit notre conception architecturale.<br />Un projet prend naissance avec l&rsquo;association d&rsquo;un besoin et d&rsquo;un concept. Cette id&eacute;e directrice s&rsquo;enrichit, &eacute;volue et cro&icirc;t dans le dialogue.<br />Nos projets sont le fruit du lien tiss&eacute; entre le ma&icirc;tre d&rsquo;ouvrage, un programme, et une synth&egrave;se rigoureuse des aspects programmatiques, sociaux, techniques et financiers.</p>
+            <p class="page-title">Comp&eacute;tences</p>
+            <p>Nos exp&eacute;riences professionnelles, ainsi que nos cursus individuels, nous permettent de disposer de comp&eacute;tences dans de nombreux domaines.<br />Nous int&egrave;grons d&egrave;s l&rsquo;esquisse la qualit&eacute; environnementale dans notre d&eacute;marche de conception. Nous intervenons dans la r&eacute;alisation de dossier technique de consultation. Nous assistons la ma&icirc;trise d&rsquo;ouvrage dans le choix des entreprises pour &eacute;tablir les march&eacute;s de travaux. Nous r&eacute;alisons, et assurons le suivi et la coordination des chantiers.</p>
+        </div>
+        <div class="col-6">
+            <img src="{{ asset('build/equipe1.png') }}" />
+            <img src="{{ asset('build/equipe2.png') }}" />
+            <img src="{{ asset('build/equipe3.png') }}" />
+            <img src="{{ asset('build/equipe4.png') }}" />
+            <img src="{{ asset('build/equipe5.png') }}" />
+            <img src="{{ asset('build/equipe6.png') }}" />
+        </div>
+    </div>
+{% endblock %}

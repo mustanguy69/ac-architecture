@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Services{% endblock %}
+
+{% block body %}
+    <div class="row services-page">
+        <div class="col-6">
+            <p class="page-title">Services</p>
+            <p>Dans cette cat&eacute;gorie, nous pouvons d&eacute;tailler toutes les missions que nous r&eacute;alisons. Nous nous calquons sur le canevas de la Loi MOP, en indiquant les principales phases d&rsquo;&eacute;tudes comme&nbsp;:<br />&Eacute;tat des lieux &ndash; Esquisse &ndash; Faisabilit&eacute; - Avant projet sommaire - Avant projet d&eacute;finitif - Permis de construire - Dossier de consultation des entreprise &ndash; Chantier.<br />Toutes ces phases peuvent &ecirc;tre d&eacute;crites de fa&ccedil;on tr&egrave;s sommaire et illustr&eacute;es par une planche regroupant des illustrations significatives par phase.</p>
+            <p class="page-title">Offres</p>
+            <p>Concernant nos contrats, et en relation avec le descriptif ci-dessus nous indiquons que nos &eacute;tudes font r&eacute;f&eacute;rence &agrave; la loi MOP.<br />Nos travaux sont d&eacute;compos&eacute;s par &eacute;tape ce qui offre au client une lecture claire de l&rsquo;avancement de nos &eacute;tudes, de leurs facturations et de leurs engagements.</p>
+        </div>
+        <div class="col-6">
+            <img src="{{ asset('build/services.png') }}" />
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} - AC Architecture Ingénierie</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+        <script src="{{ asset('dist/pace.js') }}"></script>
+    </head>
+    <body>
+        <div class="container">
+            {% include 'sections/menu.html.twig' %}
+            {% block body %}{% endblock %}
+            {% include 'sections/footer.html.twig' %}
+        </div>
+    </body>
+</html>
