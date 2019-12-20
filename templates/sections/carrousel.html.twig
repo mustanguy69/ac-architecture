@@ -1,0 +1,23 @@
+<div class="col-12">
+    <p class="page-title">AUTRES RÉALISATIONS EHPAD</p>
+    <div class="owl-carousel">
+        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad.png') }}"/></a>
+        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad2.png') }}"/></a>
+        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad3.png') }}"/></a>
+        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad4.png') }}"/></a>
+        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad4.png') }}"/></a>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            autoplay: true,
+            margin:40,
+            items: 4,
+            width: 150,
+            nav: true,
+        });
+    });
+</script>

@@ -1,0 +1,23 @@
+<div class="col-12">
+    <p class="page-title">AUTRES RÉALISATIONS LOGEMENTS INDIVDUELS</p>
+    <div class="owl-carousel">
+        <a href="{{ path('maison') }}"><img src="{{ asset('build/individuel1.png') }}"/></a>
+        <a href="{{ path('maison') }}"><img src="{{ asset('build/individuel2.png') }}"/></a>
+        <a href="{{ path('maison') }}"><img src="{{ asset('build/individuel3.png') }}"/></a>
+        <a href="{{ path('maison') }}"><img src="{{ asset('build/individuel4.png') }}"/></a>
+        <a href="{{ path('maison') }}"><img src="{{ asset('build/individuel5.png') }}"/></a>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            autoplay: true,
+            margin:40,
+            items: 4,
+            width: 150,
+            nav: true,
+        });
+    });
+</script>

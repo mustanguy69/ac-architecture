@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Maison de ville{% endblock %}
+
+{% block body %}
+    <div class="row real-page">
+        <p class="page-title">Logements individuels > <span class="real-breadcrumb">Maison de ville (F– Ecully)</span></p>
+        <img class="img-header" src="{{ asset('build/maison.png') }}"/>
+
+        <div class="col-4">
+            <p><strong>Maison de ville</strong></p>
+            <p class="page-title">Mission</p>
+            <p>Construction d&rsquo;une maison de ville</p>
+            <p>L&rsquo;&eacute;tablissement comportait 66 lits. Le projet porte sur la cr&eacute;ation d&rsquo;une extension, la sur&eacute;l&eacute;vation du corps principal de la maison et sur la r&eacute;novation des 66 chambres existantes.<br />Le confort thermique de l&rsquo;ensemble du projet a &eacute;t&eacute; au coeur de cette r&eacute;novation lourde.<br />Des v&eacute;g&eacute;taux remarquables ont &eacute;t&eacute; mis en valeur. Le parc de l&rsquo;&eacute;tablissement a &eacute;t&eacute; paysag&eacute; et des vues sur les espaces ext&eacute;rieurs ont &eacute;t&eacute; cr&eacute;&eacute;s dans le but d&rsquo;agr&eacute;menter le confort des r&eacute;sidents.</p>
+            <p><span class="page-title">Localisation : </span> 119 Avenue Paul Santy, 69008 Lyon</p>
+            <p class="page-title">Ma&icirc;tre d&rsquo;ouvrage</p>
+            <p>Construire en Humanit&eacute;<br />Mission MOE BASE + EXE<br />Phase Chantier<br />Ann&eacute;e de r&eacute;alisation 2016 - Chantier en cours</p>
+            <p class="page-title">Ma&icirc;tre d&rsquo;&oelig;uvre</p>
+            <p>Architecte ac architecture<br />Economiste denizou<br />Bet structure curvat<br />Bet fluides eolys<br />Bureau de contr&ocirc;le veritas<br />Csps veritas</p>
+            <p class="page-title">Montant des travaux : 8 000 000 &euro;</p>
+            <p>SDP r&eacute;habilit&eacute;e 3 636 m2<br />SDP cr&eacute;&eacute;e 2 138 m2<br />Surface de Plancher totale 5 774 m2<br />Surface dans &OElig;uvre 4 650 m2<br />Surface utile 4 650 m2</p>
+            <p>&nbsp;</p>
+            <p><a href="{{ asset('build/fiche.pdf') }}" download><img src="{{ asset('build/pdf.png') }}"/>  T&eacute;l&eacute;chargez la fiche projet</a></p>
+        </div>
+
+        <div class="col-8 side-img">
+            <img src="{{ asset('build/maison1.png') }}"/>
+            <img src="{{ asset('build/maison2.png') }}"/>
+            <img src="{{ asset('build/maison3.png') }}"/>
+        </div>
+
+        {% include 'sections/carrousel2.html.twig' %}
+    </div>
+{% endblock %}

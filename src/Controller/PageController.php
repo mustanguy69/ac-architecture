@@ -119,4 +119,20 @@ class PageController extends AbstractController
     {
         return $this->render('pages/mentions.html.twig');
     }
+
+    /**
+     * @Route("/maison-caritas", name="caritas")
+     */
+    public function caritasPage()
+    {
+        return $this->render('pages/caritas.html.twig');
+    }
+
+    /**
+     * @Route("/maison-de-ville", name="maison")
+     */
+    public function maisonPage()
+    {
+        return $this->render('pages/maison.html.twig');
+    }
 }

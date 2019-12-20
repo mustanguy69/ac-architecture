@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/caritas1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/caritas2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/caritas3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ehpad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ehpad2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ehpad3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ehpad4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/fiche.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/individuel1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/individuel2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/individuel3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/individuel4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/individuel5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maison1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maison2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maison3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/default/layout.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/caritas.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/maison.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel2.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ac-architecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ac-architecture.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/equipe.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/equipe.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/individuels.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/individuels.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +163,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1V771d7tiIyyGGypTvQUdhb0VUL" />
@@ -139,18 +176,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/sections" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\ac-architecture\assets\images" />
+      <recent name="D:\wamp64\www\ac-architecture\templates\pages" />
+      <recent name="D:\wamp64\www\ac-architecture\templates\bundles\EasyAdminBundle\default" />
       <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
       <recent name="D:\wamp64\www\ac-architecture\templates" />
-      <recent name="D:\wamp64\www\ac-architecture\templates\pages" />
-      <recent name="D:\wamp64\www\ac-architecture\assets\fonts" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -182,7 +222,8 @@
       <workItem from="1576592266283" duration="11005000" />
       <workItem from="1576661269334" duration="6124000" />
       <workItem from="1576673539367" duration="8361000" />
-      <workItem from="1576759302655" duration="5754000" />
+      <workItem from="1576759302655" duration="10795000" />
+      <workItem from="1576832176202" duration="9737000" />
     </task>
     <servers />
   </component>
@@ -190,6 +231,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="650" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576773820090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576773820090" />
+    <state x="753" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1576770630585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576770630585" />
     <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1576592249530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -198,15 +247,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576592280361" />
-    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1576759457087">
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1576832188677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576759457087" />
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576832188677" />
     <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576661288466" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576679392713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576679392713" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576593403985" />
+    <state x="682" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576837081863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576837081863" />
   </component>
 </project>

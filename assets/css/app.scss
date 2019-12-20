@@ -15,6 +15,11 @@ strong {
 .page-title {
     color: $blue;
     font-weight: 900;
+
+    .real-breadcrumb {
+        color: $grey;
+        font-weight: 400;
+    }
 }
 
 .pace {
@@ -273,8 +278,63 @@ strong {
 }
 
 .equipe-page {
-    img {
-        padding: 10px;
+    .equipe-img {
+        .img {
+            position: relative;
+            width: 30%;
+            display: inline-block;
+            margin-bottom: 15px;
+            margin-left: 15px;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                .img-content {
+                    top: 50%;
+                    left: 50%;
+                    opacity: 1;
+                }
+
+                .img-overlay {
+                    opacity: 1;
+                }
+            }
+
+            .img-overlay {
+                background: rgba(86,155,177, 0.6);
+                position: absolute;
+                //height: 99%;
+                //width: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                -webkit-transition: all 0.4s ease-in-out 0s;
+                -moz-transition: all 0.4s ease-in-out 0s;
+                transition: all 0.4s ease-in-out 0s;
+            }
+
+            .img-content {
+                position: absolute;
+                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: 100%;
+                top: 80%;
+                left: 50%;
+                opacity: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+                color: white;
+            }
+        }
     }
 
     .col-6 {
@@ -292,6 +352,107 @@ strong {
     .col-6 {
         &:first-of-type {
             padding-right: 20px;
+        }
+    }
+}
+
+.realisation-page {
+    .realisation-img {
+        .img {
+            position: relative;
+            width:30%;
+            display: inline-block;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            cursor: pointer;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                .img-content {
+                    top: 50%;
+                    left: 50%;
+                    opacity: 1;
+                }
+
+                .img-overlay {
+                    opacity: 1;
+                }
+            }
+
+            .img-overlay {
+                background: rgba(86,155,177, 0.6);
+                position: absolute;
+                //height: 99%;
+                //width: 90%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                -webkit-transition: all 0.4s ease-in-out 0s;
+                -moz-transition: all 0.4s ease-in-out 0s;
+                transition: all 0.4s ease-in-out 0s;
+            }
+
+            .img-content {
+                position: absolute;
+                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: 100%;
+                top: 80%;
+                left: 50%;
+                opacity: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+                color: white;
+            }
+        }
+    }
+}
+
+.real-page {
+    .img-header {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .side-img {
+        text-align: right;
+        img {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .col-12 {
+        margin-top: 20px;
+    }
+}
+
+.owl-nav {
+    span {
+        font-size: 80px;
+        color: $blue;
+        position: absolute;
+
+        &[aria-label=Previous] {
+            top: 20%;
+            left: 10px;
+        }
+
+        &[aria-label=Next] {
+            top: 20%;
+            right: 10px;
         }
     }
 }
