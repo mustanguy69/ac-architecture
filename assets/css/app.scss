@@ -342,6 +342,15 @@ strong {
             text-align: right;
         }
     }
+
+    .cv-equipe {
+        display: none;
+        text-align: center;
+        background-color: $blue;
+        padding:15px;
+        margin-left:20px;
+    }
+
 }
 
 .mentions-page {

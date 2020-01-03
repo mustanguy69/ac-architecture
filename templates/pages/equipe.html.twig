@@ -59,6 +59,25 @@
                     <p>Assistante de Direction</p>
                 </div>
             </div>
+            <div class="col-8 cv-equipe">
+                <p>Ordre des architectes n°073754</p>
+                <p>Diplomé en Architecture et Ingénerie intégrant la qualité environnemental du bati et de l'urbanisme
+                 - ENSAL 2011 DEA "Le projet architecturale et urbain, théories et dispositifs" - Ecole Nationale
+                 Supérieure d'Architecture de Paris Belleville - 2001
+                 Ecole Nationale Supérieure d'Architecture de Lyon - 2000</p>
+
+                 <p>A l'agence depuis 2018</p>
+
+            </div>
         </div>
     </div>
+    <script>
+        $('.img').on('mouseover', function(e) {
+            $('.cv-equipe').css('display', 'block');
+        });
+        $('.img').on('mouseleave', function(e) {
+            $('.cv-equipe').css('display', 'none');
+        });
+
+    </script>
 {% endblock %}
