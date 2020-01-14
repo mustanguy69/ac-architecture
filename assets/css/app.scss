@@ -15,7 +15,7 @@ strong {
 .page-title {
     color: $blue;
     font-weight: 900;
-
+    margin-bottom: 5px;
     .real-breadcrumb {
         color: $grey;
         font-weight: 400;
@@ -201,16 +201,14 @@ strong {
         p {
             margin-bottom: 0rem;
         }
-        span {
+        span, p {
             color: $blue;
             font-size: 31px;
             line-height: 2;
         }
         input {
-            margin-left: 5px;
             margin-right: 5px;
             font-size: 31px;
-            margin-top: -13px;
             color: $blue;
             -webkit-box-shadow: 0px 1px 4px 0px #828282;
             box-shadow: 0px 1px 4px 0px #828282;
@@ -334,12 +332,6 @@ strong {
                 transition: all 0.3s ease-in-out 0s;
                 color: white;
             }
-        }
-    }
-
-    .col-6 {
-        &:last-of-type {
-            text-align: right;
         }
     }
 
