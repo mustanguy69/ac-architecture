@@ -121,7 +121,7 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/maison-caritas", name="caritas")
+     * @Route("/realisations/ehpad/maison-caritas", name="caritas")
      */
     public function caritasPage()
     {
@@ -129,10 +129,26 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/maison-de-ville", name="maison")
+     * @Route("/realisations/logements-individuel/maison-de-ville", name="maison")
      */
     public function maisonPage()
     {
         return $this->render('pages/maison.html.twig');
+    }
+
+    /**
+     * @Route("/realisations/lieux-cultuels/abbaye-de-rochette", name="rochette")
+     */
+    public function rochettePage()
+    {
+        return $this->render('pages/rochette.html.twig');
+    }
+
+    /**
+     * @Route("/realisations/lieux-cultuels/abbaye-de-rochette-2", name="rochette2")
+     */
+    public function rochette2Page()
+    {
+        return $this->render('pages/rochette2.html.twig');
     }
 }

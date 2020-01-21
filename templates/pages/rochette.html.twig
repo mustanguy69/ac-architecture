@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Abbaye de la Rochette{% endblock %}
+
+{% block body %}
+    <div class="row real-page real-cultuel">
+        <div class="col-12">
+          <p><a href="{{ path('cultuels') }}" class="page-title">Lieux cultuels</a> > <span class="real-breadcrumb">Abbaye de la Rochette</span></p>
+        </div>
+        <div class="col-8">
+          <div class="owl-carousel owl-real">
+              <img src="{{ asset('build/rochette.png') }}"/>
+              <img src="{{ asset('build/rochette2.png') }}"/>
+          </div>
+          <script>
+              $(document).ready(function(){
+                  $(".owl-real").owlCarousel({
+                      loop:true,
+                      autoHeight: true,
+                      autoplay: false,
+                      items: 1,
+                      nav: true,
+                  });
+              });
+          </script>
+        </div>
+        <div class="col-4">
+          <p><span class="page-title">Localisation :</span><br />945 Route du village,<br />73330 Belmont-Tramonet</p>
+          <p><span class="page-title">Mission MOE :</span> Compl&egrave;te<br />BASE + EXE</p>
+          <p><span class="page-title">Ma&icirc;tre D&rsquo;Ouvrage</span><br />Construire en Humanit&eacute;</p>
+          <p><span class="page-title">Ma&icirc;tre D&rsquo;&OElig;uvre</span><br /><strong>Architecte</strong> AC Architecture<br /><strong>Economiste</strong> Denizou<br /><strong>Bet Structure</strong> Curvat<br /><strong>Bet Fluides</strong> Eolys<br /><strong>Bureau de contr&ocirc;le</strong> Veritas<br /><strong>Csps</strong> Veritas</p>
+          <p><span class="page-title">Ann&eacute;e de r&eacute;alisation</span> 2016</p>
+          <p><span class="page-title">Montant des travaux :</span> 8 000 000 &euro; H.T.</p>
+          <p><span class="page-title">Surface : </span><br /><strong>SDP R&eacute;habilit&eacute;e</strong> 3 636 M2<br /><strong>SDP Cr&eacute;&eacute;e</strong> 2 138 M2</p>
+        </div>
+
+        <div class="col-8">
+            <p>L’établissement comportait 66 lits. Le projet porte sur la création d’une extension, la surélévation du  corps principal de la maison et sur la rénovation des 66 chambres existantes. Le confort thermique de l’ensemble du projet a été au coeur de cette rénovation lourde. Des végétaux remarquables ont été mis en valeur. Le parc de l’établissement a été paysagé et des  vues sur les espaces extérieurs ont été créés dans le but d’agrémenter le confort des résidents.</p>
+        </div>
+        <div class="col-4">
+          <br>
+          <br>
+          <br>
+          <br>
+            <p><a href="{{ asset('build/fiche.pdf') }}" download><img src="{{ asset('build/pdf.png') }}"/>  T&eacute;l&eacute;chargez la fiche projet</a></p>
+        </div>
+
+        {% include 'sections/carrousel3.html.twig' %}
+    </div>
+{% endblock %}
