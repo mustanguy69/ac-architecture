@@ -28,16 +28,6 @@ class Images
      */
     private $name;
 
-    /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Pages", mappedBy="images")
-     */
-    private $pages;
-
-    public function __construct()
-    {
-        $this->pages = new ArrayCollection();
-    }
-
     public function getId(): ?int
     {
         return $this->id;
@@ -67,31 +57,4 @@ class Images
         return $this;
     }
 
-    /**
-     * @return Collection|Pages[]
-     */
-    public function getPages(): Collection
-    {
-        return $this->pages;
-    }
-
-    public function addPage(Pages $page): self
-    {
-        if (!$this->pages->contains($page)) {
-            $this->pages[] = $page;
-            $page->addImage($this);
-        }
-
-        return $this;
-    }
-
-    public function removePage(Pages $page): self
-    {
-        if ($this->pages->contains($page)) {
-            $this->pages->removeElement($page);
-            $page->removeImage($this);
-        }
-
-        return $this;
-    }
 }

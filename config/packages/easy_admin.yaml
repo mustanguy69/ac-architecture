@@ -1,11 +1,17 @@
 easy_admin:
+    site_name: 'AC-Architecture Admin'
     design:
         assets:
             js:
                 - 'https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yq0h5mlf29y38s38t1vdx23xv0kv6tc5g5f6g7mo95cjwxv0'
+        menu:
+            - label: 'Pages'
+              children:
+                  - { label: "L'agence - Presentation", entity: 'Presentation', params: { action: 'edit', id: 1 } }
     entities:
-        Pages:
-            class: App\Entity\Pages
+        Presentation:
+            class: App\Entity\Presentation
             form:
                 fields:
                     - { property: 'contentHtml', type: 'textarea' }
+                    - { property: 'imageFile', type: 'vich_image' }
