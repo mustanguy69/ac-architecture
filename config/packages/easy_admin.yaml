@@ -8,10 +8,30 @@ easy_admin:
             - label: 'Pages'
               children:
                   - { label: "L'agence - Presentation", entity: 'Presentation', params: { action: 'edit', id: 1 } }
+                  - { label: "L'agence - Equipe", entity: 'Equipe', params: { action: 'edit', id: 1 } }
     entities:
         Presentation:
             class: App\Entity\Presentation
             form:
                 fields:
-                    - { property: 'contentHtml', type: 'textarea' }
+                    - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
                     - { property: 'imageFile', type: 'vich_image' }
+        Equipe:
+            class: App\Entity\Equipe
+            form:
+                fields:
+                    - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
+                    - { property: 'equipe1File', label: "Membre n°1 Photo :", type: 'vich_image' }
+                    - { property: 'equipe1Cv', label: "Membre n°1 CV :" ,type: 'textarea' }
+                    - { property: 'equipe2File', label: "Membre n°2 Photo :", type: 'vich_image' }
+                    - { property: 'equipe2Cv', label: "Membre n°2 CV :" ,type: 'textarea' }
+                    - { property: 'equipe3File', label: "Membre n°3 Photo :", type: 'vich_image' }
+                    - { property: 'equipe3Cv', label: "Membre n°3 CV :" ,type: 'textarea' }
+                    - { property: 'equipe4File', label: "Membre n°4 Photo :", type: 'vich_image' }
+                    - { property: 'equipe4Cv', label: "Membre n°4 CV :" ,type: 'textarea' }
+                    - { property: 'equipe5File', label: "Membre n°5 Photo :", type: 'vich_image' }
+                    - { property: 'equipe5Cv', label: "Membre n°5 CV :" ,type: 'textarea' }
+                    - { property: 'equipe6File', label: "Membre n°6 Photo :", type: 'vich_image' }
+                    - { property: 'equipe6Cv', label: "Membre n°6 CV :" ,type: 'textarea' }
+                    - { property: 'equipe7File', label: "Membre n°7 Photo :", type: 'vich_image' }
+                    - { property: 'equipe7Cv', label: "Membre n°7 CV :" ,type: 'textarea' }
