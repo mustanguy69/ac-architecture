@@ -1,0 +1,24 @@
+fields EHPAD
+
+title
+category
+thumbnail
+headerImg
+ContentHtml
+SideImg1
+SideImg2
+SideImg3
+ProjectFile
+
+
+fields Cultuels
+
+title
+category
+thumbnail
+headerImg
+ContentHtml
+SideImg1
+SideImg2
+SideImg3
+ProjectFile
