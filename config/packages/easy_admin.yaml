@@ -1,5 +1,9 @@
 easy_admin:
+    user:
+      name_property_path: 'username'
     site_name: 'AC-Architecture Admin'
+    # edit:
+    #     actions: ['-delete']
     design:
         assets:
             js:
@@ -25,7 +29,9 @@ easy_admin:
                 fields:
                     - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
                     - { property: 'imageFile', type: 'vich_image' }
+            disabled_actions: ['delete', 'list']
         Equipe:
+            disabled_actions: ['delete', 'list']
             class: App\Entity\Equipe
             form:
                 fields:
@@ -45,12 +51,14 @@ easy_admin:
                     - { property: 'equipe7File', label: "Membre n°7 Photo :", type: 'vich_image' }
                     - { property: 'equipe7Cv', label: "Membre n°7 CV :" ,type: 'textarea' }
         Organisation:
+            disabled_actions: ['delete', 'list']
             class: App\Entity\Organisation
             form:
                 fields:
                     - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
                     - { property: 'imageFile', type: 'vich_image' }
         Services:
+            disabled_actions: ['delete', 'list']
             class: App\Entity\Services
             form:
                 fields:

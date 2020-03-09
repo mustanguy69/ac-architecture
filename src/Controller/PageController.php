@@ -21,7 +21,9 @@ class PageController extends AbstractController
      */
     public function presentationPage()
     {
-        return $this->render('pages/presentation.html.twig');
+        $presentation = $this->getDoctrine()->getRepository('App:Presentation')->find(1);
+
+        return $this->render('pages/presentation.html.twig', ['presentation' => $presentation]);
     }
 
     /**
