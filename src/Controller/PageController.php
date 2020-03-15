@@ -79,9 +79,9 @@ class PageController extends AbstractController
     /**
      * @Route("/realisations/ehpad/carrousel", name="ehpad_carrousel")
      */
-    public function ehpadCarrouselPage()
+    public function ehpadCarrouselPage($current)
     {
-        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findAll();
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
 
         return $this->render('sections/carrousel.html.twig', ['reals' => $ehpad]);
     }

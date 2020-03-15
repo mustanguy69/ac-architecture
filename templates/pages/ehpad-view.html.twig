@@ -18,6 +18,6 @@
             <img class="img-header" src="{{ vich_uploader_asset(real, 'sideImg3File') }}"/>
         </div>
 
-        {{ render(controller('App\\Controller\\PageController::ehpadCarrouselPage')) }}
+        {{ render(controller('App\\Controller\\PageController::ehpadCarrouselPage', {current: real.id})) }}
     </div>
 {% endblock %}

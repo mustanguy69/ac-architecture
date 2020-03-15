@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/pages/ehpad-view.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ac-architecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ac-architecture.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Equipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Equipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Organisation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Organisation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Presentation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Presentation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Services.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/caritas.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/equipe.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/equipe.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/organisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/organisation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/presentation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/presentation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/services.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/services.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/ehpad-view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad-view.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +192,7 @@
       <workItem from="1576673539367" duration="8361000" />
       <workItem from="1576759302655" duration="10795000" />
       <workItem from="1576832176202" duration="9737000" />
-      <workItem from="1584233472478" duration="5996000" />
+      <workItem from="1584233472478" duration="6683000" />
     </task>
     <servers />
   </component>
