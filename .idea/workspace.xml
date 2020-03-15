@@ -2,43 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/caritas1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/caritas2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/caritas3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ehpad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ehpad2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ehpad3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ehpad4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fiche.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/individuel1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/individuel2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/individuel3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/individuel4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/individuel5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maison1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maison2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/maison3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/default/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/caritas.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/maison.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel2.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/ehpad-view.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ac-architecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ac-architecture.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Equipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Equipe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Organisation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Organisation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Presentation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Presentation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Services.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/caritas.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/equipe.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/equipe.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/individuels.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/individuels.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/organisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/organisation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/presentation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/presentation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/services.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/services.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,6 +148,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1V771d7tiIyyGGypTvQUdhb0VUL" />
@@ -176,7 +161,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/sections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -193,15 +178,15 @@
       <recent name="D:\wamp64\www\ac-architecture\templates" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -224,11 +209,23 @@
       <workItem from="1576673539367" duration="8361000" />
       <workItem from="1576759302655" duration="10795000" />
       <workItem from="1576832176202" duration="9737000" />
+      <workItem from="1584233472478" duration="5996000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="650" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576773820090">

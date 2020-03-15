@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Maison Caritas{% endblock %}
+
+{% block body %}
+    <div class="row real-page">
+        <p><a href="{{ path('ehpad') }}" class="page-title">EHPAD</a> > <span class="real-breadcrumb">{{ real.title }}</span></p>
+
+        <img class="img-header" src="{{ vich_uploader_asset(real, 'headerImgFile') }}"/>
+        <div class="col-6">
+            {{ real.contentHtml | raw }}
+            <p><a href="{{ vich_uploader_asset(real, 'projectFileFile') }}" download><img src="{{ asset('build/pdf.png') }}"/>  T&eacute;l&eacute;chargez la fiche projet</a></p>
+        </div>
+
+        <div class="col-6 side-img">
+            <img class="img-header" src="{{ vich_uploader_asset(real, 'sideImg1File') }}"/>
+            <img class="img-header" src="{{ vich_uploader_asset(real, 'sideImg2File') }}"/>
+            <img class="img-header" src="{{ vich_uploader_asset(real, 'sideImg3File') }}"/>
+        </div>
+
+        {{ render(controller('App\\Controller\\PageController::ehpadCarrouselPage')) }}
+    </div>
+{% endblock %}

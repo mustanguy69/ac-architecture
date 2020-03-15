@@ -37,18 +37,39 @@ easy_admin:
                 fields:
                     - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
                     - { property: 'equipe1File', label: "Membre n°1 Photo :", type: 'vich_image' }
+                    - { property: 'equipe1Name', label: "Membre n°1 Nom :", type: 'text' }
+                    - { property: 'equipe1Role', label: "Membre n°1 Rôle :", type: 'text' }
+                    - { property: 'equipe1Role2', label: "Membre n°1 Rôle 2 :", type: 'text' }
                     - { property: 'equipe1Cv', label: "Membre n°1 CV :" ,type: 'textarea' }
                     - { property: 'equipe2File', label: "Membre n°2 Photo :", type: 'vich_image' }
+                    - { property: 'equipe2Name', label: "Membre n°2 Nom :", type: 'text' }
+                    - { property: 'equipe2Role', label: "Membre n°2 Rôle :", type: 'text' }
+                    - { property: 'equipe2Role2', label: "Membre n°2 Rôle 2 :", type: 'text' }
                     - { property: 'equipe2Cv', label: "Membre n°2 CV :" ,type: 'textarea' }
                     - { property: 'equipe3File', label: "Membre n°3 Photo :", type: 'vich_image' }
+                    - { property: 'equipe3Name', label: "Membre n°3 Nom :", type: 'text' }
+                    - { property: 'equipe3Role', label: "Membre n°3 Rôle :", type: 'text' }
+                    - { property: 'equipe3Role2', label: "Membre n°3 Rôle 2 :", type: 'text' }
                     - { property: 'equipe3Cv', label: "Membre n°3 CV :" ,type: 'textarea' }
                     - { property: 'equipe4File', label: "Membre n°4 Photo :", type: 'vich_image' }
+                    - { property: 'equipe4Name', label: "Membre n°4 Nom :", type: 'text' }
+                    - { property: 'equipe4Role', label: "Membre n°4 Rôle :", type: 'text' }
+                    - { property: 'equipe4Role2', label: "Membre n°4 Rôle 2 :", type: 'text' }
                     - { property: 'equipe4Cv', label: "Membre n°4 CV :" ,type: 'textarea' }
                     - { property: 'equipe5File', label: "Membre n°5 Photo :", type: 'vich_image' }
+                    - { property: 'equipe5Name', label: "Membre n°5 Nom :", type: 'text' }
+                    - { property: 'equipe5Role', label: "Membre n°5 Rôle :", type: 'text' }
+                    - { property: 'equipe5Role2', label: "Membre n°5 Rôle 2 :", type: 'text' }
                     - { property: 'equipe5Cv', label: "Membre n°5 CV :" ,type: 'textarea' }
                     - { property: 'equipe6File', label: "Membre n°6 Photo :", type: 'vich_image' }
+                    - { property: 'equipe6Name', label: "Membre n°6 Nom :", type: 'text' }
+                    - { property: 'equipe6Role', label: "Membre n°6 Rôle :", type: 'text' }
+                    - { property: 'equipe6Role2', label: "Membre n°6 Rôle 2 :", type: 'text' }
                     - { property: 'equipe6Cv', label: "Membre n°6 CV :" ,type: 'textarea' }
                     - { property: 'equipe7File', label: "Membre n°7 Photo :", type: 'vich_image' }
+                    - { property: 'equipe7Name', label: "Membre n°7 Nom :", type: 'text' }
+                    - { property: 'equipe7Role', label: "Membre n°7 Rôle :", type: 'text' }
+                    - { property: 'equipe7Role2', label: "Membre n°7 Rôle 2 :", type: 'text' }
                     - { property: 'equipe7Cv', label: "Membre n°7 CV :" ,type: 'textarea' }
         Organisation:
             disabled_actions: ['delete', 'list']
@@ -76,6 +97,8 @@ easy_admin:
                     - { property: 'sideImg2File', label: "Image n°2:", type: 'vich_image' }
                     - { property: 'sideImg3File', label: "Image n°3:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
+            list:
+                fields: ['id', 'thumbnailFile', 'title']
         Collectif:
               class: App\Entity\Collectif
               form:

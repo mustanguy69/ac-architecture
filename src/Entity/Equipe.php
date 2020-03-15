@@ -30,6 +30,21 @@ class Equipe
     private $equipe1;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe1Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe1Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe1Role2;
+
+    /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe1")
     * @var File
     */
@@ -44,6 +59,21 @@ class Equipe
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $equipe2;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe2Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe2Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe2Role2;
 
     /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe2")
@@ -62,6 +92,21 @@ class Equipe
     private $equipe3;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe3Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe3Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe3Role2;
+
+    /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe3")
     * @var File
     */
@@ -76,6 +121,21 @@ class Equipe
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $equipe4;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe4Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe4Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe4Role2;
 
     /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe4")
@@ -94,6 +154,21 @@ class Equipe
     private $equipe5;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe5Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe5Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe5Role2;
+
+    /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe5")
     * @var File
     */
@@ -110,6 +185,21 @@ class Equipe
     private $equipe6;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe6Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe6Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe6Role2;
+
+    /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe6")
     * @var File
     */
@@ -124,6 +214,21 @@ class Equipe
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $equipe7;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe7Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe7Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe7Role2;
 
     /**
     * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
@@ -190,6 +295,42 @@ class Equipe
         return $this;
     }
 
+    public function getEquipe1Name(): ?string
+    {
+        return $this->equipe1Name;
+    }
+
+    public function setEquipe1Name(?string $equipe1Name): self
+    {
+        $this->equipe1Name = $equipe1Name;
+
+        return $this;
+    }
+
+    public function getEquipe1Role(): ?string
+    {
+        return $this->equipe1Role;
+    }
+
+    public function setEquipe1Role(?string $equipe1Role): self
+    {
+        $this->equipe1Role = $equipe1Role;
+
+        return $this;
+    }
+
+    public function getEquipe1Role2(): ?string
+    {
+        return $this->equipe1Role2;
+    }
+
+    public function setEquipe1Role2(?string $equipe1Role2): self
+    {
+        $this->equipe1Role2 = $equipe1Role2;
+
+        return $this;
+    }
+
     public function getEquipe1Cv(): ?string
     {
         return $this->equipe1Cv;
@@ -228,6 +369,42 @@ class Equipe
     public function setEquipe2(?string $equipe2): self
     {
         $this->equipe2 = $equipe2;
+
+        return $this;
+    }
+
+    public function getEquipe2Name(): ?string
+    {
+        return $this->equipe2Name;
+    }
+
+    public function setEquipe2Name(?string $equipe2Name): self
+    {
+        $this->equipe2Name = $equipe2Name;
+
+        return $this;
+    }
+
+    public function getEquipe2Role(): ?string
+    {
+        return $this->equipe2Role;
+    }
+
+    public function setEquipe2Role(?string $equipe2Role): self
+    {
+        $this->equipe2Role = $equipe2Role;
+
+        return $this;
+    }
+
+    public function getEquipe2Role2(): ?string
+    {
+        return $this->equipe2Role2;
+    }
+
+    public function setEquipe2Role2(?string $equipe2Role2): self
+    {
+        $this->equipe2Role2 = $equipe2Role2;
 
         return $this;
     }
@@ -274,6 +451,42 @@ class Equipe
         return $this;
     }
 
+    public function getEquipe3Name(): ?string
+    {
+        return $this->equipe3Name;
+    }
+
+    public function setEquipe3Name(?string $equipe3Name): self
+    {
+        $this->equipe3Name = $equipe3Name;
+
+        return $this;
+    }
+
+    public function getEquipe3Role(): ?string
+    {
+        return $this->equipe3Role;
+    }
+
+    public function setEquipe3Role(?string $equipe3Role): self
+    {
+        $this->equipe3Role = $equipe3Role;
+
+        return $this;
+    }
+
+    public function getEquipe3Role2(): ?string
+    {
+        return $this->equipe3Role2;
+    }
+
+    public function setEquipe3Role2(?string $equipe3Role2): self
+    {
+        $this->equipe3Role2 = $equipe3Role2;
+
+        return $this;
+    }
+
     public function getEquipe3Cv(): ?string
     {
         return $this->equipe3Cv;
@@ -312,6 +525,42 @@ class Equipe
     public function setEquipe4(?string $equipe4): self
     {
         $this->equipe4 = $equipe4;
+
+        return $this;
+    }
+
+    public function getEquipe4Name(): ?string
+    {
+        return $this->equipe4Name;
+    }
+
+    public function setEquipe4Name(?string $equipe4Name): self
+    {
+        $this->equipe4Name = $equipe4Name;
+
+        return $this;
+    }
+
+    public function getEquipe4Role(): ?string
+    {
+        return $this->equipe4Role;
+    }
+
+    public function setEquipe4Role(?string $equipe4Role): self
+    {
+        $this->equipe4Role = $equipe4Role;
+
+        return $this;
+    }
+
+    public function getEquipe4Role2(): ?string
+    {
+        return $this->equipe4Role2;
+    }
+
+    public function setEquipe4Role2(?string $equipe4Role2): self
+    {
+        $this->equipe4Role2 = $equipe4Role2;
 
         return $this;
     }
@@ -358,6 +607,42 @@ class Equipe
         return $this;
     }
 
+    public function getEquipe5Name(): ?string
+    {
+        return $this->equipe5Name;
+    }
+
+    public function setEquipe5Name(?string $equipe5Name): self
+    {
+        $this->equipe5Name = $equipe5Name;
+
+        return $this;
+    }
+
+    public function getEquipe5Role(): ?string
+    {
+        return $this->equipe5Role;
+    }
+
+    public function setEquipe5Role(?string $equipe5Role): self
+    {
+        $this->equipe5Role = $equipe5Role;
+
+        return $this;
+    }
+
+    public function getEquipe5Role2(): ?string
+    {
+        return $this->equipe5Role2;
+    }
+
+    public function setEquipe5Role2(?string $equipe5Role2): self
+    {
+        $this->equipe5Role2 = $equipe5Role2;
+
+        return $this;
+    }
+
     public function getEquipe5Cv(): ?string
     {
         return $this->equipe5Cv;
@@ -400,6 +685,42 @@ class Equipe
         return $this;
     }
 
+    public function getEquipe6Name(): ?string
+    {
+        return $this->equipe6Name;
+    }
+
+    public function setEquipe6Name(?string $equipe6Name): self
+    {
+        $this->equipe6Name = $equipe6Name;
+
+        return $this;
+    }
+
+    public function getEquipe6Role(): ?string
+    {
+        return $this->equipe6Role;
+    }
+
+    public function setEquipe6Role(?string $equipe6Role): self
+    {
+        $this->equipe6Role = $equipe6Role;
+
+        return $this;
+    }
+
+    public function getEquipe6Role2(): ?string
+    {
+        return $this->equipe6Role2;
+    }
+
+    public function setEquipe6Role2(?string $equipe6Role2): self
+    {
+        $this->equipe6Role2 = $equipe6Role2;
+
+        return $this;
+    }
+
     public function getEquipe6Cv(): ?string
     {
         return $this->equipe6Cv;
@@ -438,6 +759,42 @@ class Equipe
     public function setEquipe7(?string $equipe7): self
     {
         $this->equipe7 = $equipe7;
+
+        return $this;
+    }
+
+    public function getEquipe7Name(): ?string
+    {
+        return $this->equipe7Name;
+    }
+
+    public function setEquipe7Name(?string $equipe7Name): self
+    {
+        $this->equipe7Name = $equipe7Name;
+
+        return $this;
+    }
+
+    public function getEquipe7Role(): ?string
+    {
+        return $this->equipe7Role;
+    }
+
+    public function setEquipe7Role(?string $equipe7Role): self
+    {
+        $this->equipe7Role = $equipe7Role;
+
+        return $this;
+    }
+
+    public function getEquipe7Role2(): ?string
+    {
+        return $this->equipe7Role2;
+    }
+
+    public function setEquipe7Role2(?string $equipe7Role2): self
+    {
+        $this->equipe7Role2 = $equipe7Role2;
 
         return $this;
     }

@@ -6,42 +6,17 @@
     <div class="row realisation-page">
         <div class="col-12 realisation-img">
             <p class="page-title">EHPAD</p>
-            <div class="col-4 img">
-                <a href="{{ path('caritas') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/ehpad.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison Caritas</strong></p>
+            {% for real in ehpad %}
+                <div class="col-4 img">
+                    <a href="{{ path('ehpad_view', {id: real.id}) }}">
+                        <div class="img-overlay"></div>
+                        <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
+                    </a>
+                    <div class="img-content">
+                        <p><strong>{{ real.title }}</strong></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('caritas') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/ehpad2.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison Caritas</strong></p>
-                </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('caritas') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/ehpad3.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison Caritas</strong></p>
-                </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('caritas') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/ehpad4.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison Caritas</strong></p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

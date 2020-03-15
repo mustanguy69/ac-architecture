@@ -1,11 +1,9 @@
 <div class="col-12">
     <p class="page-title">AUTRES RÉALISATIONS EHPAD</p>
     <div class="owl-carousel">
-        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad.png') }}"/></a>
-        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad2.png') }}"/></a>
-        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad3.png') }}"/></a>
-        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad4.png') }}"/></a>
-        <a href="{{ path('caritas') }}"><img src="{{ asset('build/ehpad4.png') }}"/></a>
+        {% for real in reals %}
+            <a href="{{ path('ehpad_view', {id: real.id}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
+        {% endfor %}
     </div>
 </div>
 

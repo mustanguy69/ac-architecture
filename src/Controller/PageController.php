@@ -31,7 +31,9 @@ class PageController extends AbstractController
      */
     public function equipePage()
     {
-        return $this->render('pages/equipe.html.twig');
+        $equipe = $this->getDoctrine()->getRepository('App:Equipe')->find(1);
+
+        return $this->render('pages/equipe.html.twig', ['equipe' => $equipe]);
     }
 
     /**
@@ -39,7 +41,9 @@ class PageController extends AbstractController
      */
     public function organisationPage()
     {
-        return $this->render('pages/organisation.html.twig');
+        $organisation = $this->getDoctrine()->getRepository('App:Organisation')->find(1);
+
+        return $this->render('pages/organisation.html.twig', ['organisation' => $organisation]);
     }
 
     /**
@@ -47,7 +51,9 @@ class PageController extends AbstractController
      */
     public function servicesPage()
     {
-        return $this->render('pages/services.html.twig');
+        $services = $this->getDoctrine()->getRepository('App:Services')->find(1);
+
+        return $this->render('pages/services.html.twig', ['services' => $services]);
     }
 
     /**
@@ -55,7 +61,29 @@ class PageController extends AbstractController
      */
     public function ehpadPage()
     {
-        return $this->render('pages/ehpad.html.twig');
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findAll();
+
+        return $this->render('pages/ehpad.html.twig', ['ehpad' => $ehpad]);
+    }
+
+    /**
+     * @Route("/realisations/ehpad/{id}", name="ehpad_view")
+     */
+    public function ehpadViewPage($id)
+    {
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+
+        return $this->render('pages/ehpad-view.html.twig', ['real' => $ehpad]);
+    }
+
+    /**
+     * @Route("/realisations/ehpad/carrousel", name="ehpad_carrousel")
+     */
+    public function ehpadCarrouselPage()
+    {
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findAll();
+
+        return $this->render('sections/carrousel.html.twig', ['reals' => $ehpad]);
     }
 
     /**
@@ -120,14 +148,6 @@ class PageController extends AbstractController
     public function mentionsPage()
     {
         return $this->render('pages/mentions.html.twig');
-    }
-
-    /**
-     * @Route("/realisations/ehpad/maison-caritas", name="caritas")
-     */
-    public function caritasPage()
-    {
-        return $this->render('pages/caritas.html.twig');
     }
 
     /**
