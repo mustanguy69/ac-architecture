@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/Default/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/Default/layout.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +200,7 @@
       <workItem from="1584500058498" duration="790000" />
       <workItem from="1584673448199" duration="1280000" />
       <workItem from="1584759541894" duration="5053000" />
-      <workItem from="1584842614250" duration="2408000" />
+      <workItem from="1584842614250" duration="3444000" />
     </task>
     <servers />
   </component>
