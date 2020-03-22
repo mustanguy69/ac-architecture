@@ -433,23 +433,25 @@ strong {
         color: $blue;
         position: absolute;
     }
+
+    span {
+        &[aria-label=Previous] {
+            top: 40%;
+            transform: translateY(-50%);
+            left: 10px;
+        }
+
+        &[aria-label=Next] {
+            top: 40%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+    }
 }
 
 .owl-footer {
   .owl-nav {
-      span {
-          &[aria-label=Previous] {
-              top: 40%;
-              transform: translateY(-50%);
-              left: 10px;
-          }
 
-          &[aria-label=Next] {
-              top: 40%;
-              transform: translateY(-50%);
-              right: 10px;
-          }
-      }
   }
 }
 
