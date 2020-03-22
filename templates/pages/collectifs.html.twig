@@ -6,9 +6,9 @@
     <div class="row realisation-page">
         <div class="col-12 realisation-img">
             <p class="page-title">Logement collectifs</p>
-            {% for real in ehpad %}
-                <div class="col-4 img">
-                    <a href="{{ path('individuel_view', {id: real.id}) }}">
+            {% for real in collectif %}
+                <div class="col-4 img" {% if loop.index % 3 == 0 %}style="margin-right: 0"{% endif %}>
+                    <a href="{{ path('collectif_view', {id: real.id}) }}">
                         <div class="img-overlay"></div>
                         <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
                         <div class="img-content">
