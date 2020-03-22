@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ real.title }}{% endblock %}
+
+{% block body %}
+    <div class="row real-page">
+        <div class="col-12">
+            <p><a href="{{ path('equipements') }}" class="page-title">Equipements</a> > <span class="real-breadcrumb">{{ real.title }}</span></p>
+        </div>
+        <div class="col-8">
+            <div class="owl-carousel owl-real">
+                <img src="{{ vich_uploader_asset(real, 'image1File') }}"/>
+                {% if real.image2 %}
+                    <img src="{{ vich_uploader_asset(real, 'image2File') }}"/>
+                {% endif %}
+                {% if real.image3 %}
+                    <img src="{{ vich_uploader_asset(real, 'image3File') }}"/>
+                {% endif %}
+                {% if real.image4 %}
+                    <img src="{{ vich_uploader_asset(real, 'image4File') }}"/>
+                {% endif %}
+                {% if real.image5 %}
+                    <img src="{{ vich_uploader_asset(real, 'image5File') }}"/>
+                {% endif %}
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".owl-real").owlCarousel({
+                        loop:true,
+                        autoHeight: true,
+                        autoplay: false,
+                        items: 1,
+                        nav: true,
+                    });
+                });
+            </script>
+        </div>
+        <div class="col-4">
+            {{ real.contentRightHtml | raw }}
+        </div>
+
+        <div class="col-8">
+            {{ real.contentBottomHtml | raw }}
+        </div>
+
+        <div class="col-4">
+            <p><a href="{{ vich_uploader_asset(real, 'projectFileFile') }}" download><img src="{{ asset('build/pdf.png') }}"/>  T&eacute;l&eacute;chargez la fiche projet</a></p>
+        </div>
+
+        {{ render(controller('App\\Controller\\PageController::equipementCarrouselPage', {current: real.id})) }}
+    </div>
+{% endblock %}

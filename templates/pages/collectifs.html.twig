@@ -1,7 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Logements collectis{% endblock %}
+{% block title %}Logements collectifs{% endblock %}
 
 {% block body %}
-
+    <div class="row realisation-page">
+        <div class="col-12 realisation-img">
+            <p class="page-title">Logement collectifs</p>
+            {% for real in ehpad %}
+                <div class="col-4 img">
+                    <a href="{{ path('individuel_view', {id: real.id}) }}">
+                        <div class="img-overlay"></div>
+                        <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
+                        <div class="img-content">
+                            <p><strong>{{ real.title }}</strong></p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

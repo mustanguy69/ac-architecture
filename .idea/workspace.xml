@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/pages/collectif-view.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/cultuel-view.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/equipement-view.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/individuel-view.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel-collectif.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel-cultuel.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel-equipement.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sections/carrousel-individuel.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Collectif.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Collectif.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Cultuel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cultuel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Equipement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Equipement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Individuel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Individuel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/collectifs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/collectifs.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/cultuels.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/cultuels.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/equipements.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/equipements.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/individuels.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/individuels.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/maison.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/rochette2.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sections/carrousel2.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sections/carrousel3.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,13 +180,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/sections" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ac-architecture\templates\sections" />
+      <recent name="C:\wamp64\www\ac-architecture\templates\pages" />
       <recent name="C:\wamp64\www\ac-architecture\public\uploads\images" />
       <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
     </key>
@@ -215,7 +237,7 @@
       <workItem from="1584500058498" duration="790000" />
       <workItem from="1584673448199" duration="1280000" />
       <workItem from="1584759541894" duration="5053000" />
-      <workItem from="1584842614250" duration="5802000" />
+      <workItem from="1584842614250" duration="9623000" />
     </task>
     <servers />
   </component>

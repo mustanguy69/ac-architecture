@@ -1,0 +1,21 @@
+<div class="col-12">
+    <p class="page-title">AUTRES RÉALISATIONS LIEUX CULTUELS</p>
+    <div class="owl-carousel">
+        {% for real in reals %}
+            <a href="{{ path('cultuel_view', {id: real.id}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            autoplay: true,
+            margin:40,
+            items: 4,
+            width: 150,
+            nav: true,
+        });
+    });
+</script>

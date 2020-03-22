@@ -61,7 +61,7 @@ class PageController extends AbstractController
      */
     public function ehpadPage()
     {
-        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findAll();
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findBy([], ['id' => 'DESC']);
 
         return $this->render('pages/ehpad.html.twig', ['ehpad' => $ehpad]);
     }
@@ -91,15 +91,59 @@ class PageController extends AbstractController
      */
     public function collectifsPage()
     {
-        return $this->render('pages/collectifs.html.twig');
+        $collectif = $this->getDoctrine()->getRepository('App:Collectif')->findBy([], ['id' => 'DESC']);
+
+        return $this->render('pages/collectifs.html.twig', ['collectif' => $collectif]);
     }
 
     /**
-     * @Route("/realisations/logements-individuel", name="individuels")
+     * @Route("/realisations/logements-collectifs/{id}", name="collectif_view")
+     */
+    public function collectifViewPage($id)
+    {
+        $collectif = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+
+        return $this->render('pages/collectif-view.html.twig', ['real' => $collectif]);
+    }
+
+    /**
+     * @Route("/realisations/logements-collectifs/carrousel", name="collectif_carrousel")
+     */
+    public function collectifCarrouselPage($current)
+    {
+        $collectif = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
+
+        return $this->render('sections/carrousel-collectif.html.twig', ['reals' => $collectif]);
+    }
+
+    /**
+     * @Route("/realisations/logements-individuels", name="individuels")
      */
     public function individuelsPage()
     {
-        return $this->render('pages/individuels.html.twig');
+        $individuel = $this->getDoctrine()->getRepository('App:Collectif')->findBy([], ['id' => 'DESC']);
+
+        return $this->render('pages/individuels.html.twig', ['individuel' => $individuel]);
+    }
+
+    /**
+     * @Route("/realisations/logements-individuels/{id}", name="individuel_view")
+     */
+    public function individuelViewPage($id)
+    {
+        $individuel = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+
+        return $this->render('pages/individuel-view.html.twig', ['real' => $individuel]);
+    }
+
+    /**
+     * @Route("/realisations/logements-individuels/carrousel", name="individuel_carrousel")
+     */
+    public function individuelCarrouselPage($current)
+    {
+        $individuel = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
+
+        return $this->render('sections/carrousel-individuel.html.twig', ['reals' => $individuel]);
     }
 
     /**
@@ -107,15 +151,59 @@ class PageController extends AbstractController
      */
     public function cultuelsPage()
     {
+        $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->findAll();
+
         return $this->render('pages/cultuels.html.twig');
     }
 
     /**
-     * @Route("/realisations/equipements", name="equipements")
+     * @Route("/realisations/lieux-cultuels/{id}", name="cultuel_view")
+     */
+    public function cultuelViewPage($id)
+    {
+        $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->find($id);
+
+        return $this->render('pages/ehpad-view.html.twig', ['real' => $cultuel]);
+    }
+
+    /**
+     * @Route("/realisations/lieux-cultuel/carrousel", name="ehpad_cultuel")
+     */
+    public function cultuelCarrouselPage($current)
+    {
+        $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->findByNot('id', $current);
+
+        return $this->render('sections/carrousel-cultuel.html.twig', ['reals' => $cultuel]);
+    }
+
+    /**
+     * @Route("/realisations/logements-equipements", name="equipements")
      */
     public function equipementsPage()
     {
-        return $this->render('pages/equipements.html.twig');
+        $equipement = $this->getDoctrine()->getRepository('App:Collectif')->findBy([], ['id' => 'DESC']);
+
+        return $this->render('pages/equipements.html.twig', ['equipement' => $equipement]);
+    }
+
+    /**
+     * @Route("/realisations/logements-equipements/{id}", name="equipement_view")
+     */
+    public function equipementViewPage($id)
+    {
+        $equipement = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+
+        return $this->render('pages/equipement-view.html.twig', ['real' => $equipement]);
+    }
+
+    /**
+     * @Route("/realisations/logements-equipements/carrousel", name="equipement_carrousel")
+     */
+    public function equipementCarrouselPage($current)
+    {
+        $equipement = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
+
+        return $this->render('sections/carrousel-equipement.html.twig', ['reals' => $equipement]);
     }
 
     /**
@@ -150,27 +238,4 @@ class PageController extends AbstractController
         return $this->render('pages/mentions.html.twig');
     }
 
-    /**
-     * @Route("/realisations/logements-individuel/maison-de-ville", name="maison")
-     */
-    public function maisonPage()
-    {
-        return $this->render('pages/maison.html.twig');
-    }
-
-    /**
-     * @Route("/realisations/lieux-cultuels/abbaye-de-rochette", name="rochette")
-     */
-    public function rochettePage()
-    {
-        return $this->render('pages/rochette.html.twig');
-    }
-
-    /**
-     * @Route("/realisations/lieux-cultuels/abbaye-de-rochette-2", name="rochette2")
-     */
-    public function rochette2Page()
-    {
-        return $this->render('pages/rochette2.html.twig');
-    }
 }

@@ -5,52 +5,18 @@
 {% block body %}
     <div class="row realisation-page">
         <div class="col-12 realisation-img">
-            <p class="page-title">Logements individuels</p>
-            <div class="col-4 img">
-                <a href="{{ path('maison') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/individuel1.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison de ville</strong></p>
+            <p class="page-title">Logement individuels</p>
+            {% for real in ehpad %}
+                <div class="col-4 img">
+                    <a href="{{ path('individuel_view', {id: real.id}) }}">
+                        <div class="img-overlay"></div>
+                        <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
+                        <div class="img-content">
+                            <p><strong>{{ real.title }}</strong></p>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('maison') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/individuel2.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison de ville</strong></p>
-                </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('maison') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/individuel3.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison de ville</strong></p>
-                </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('maison') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/individuel4.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison de ville</strong></p>
-                </div>
-            </div>
-            <div class="col-4 img">
-                <a href="{{ path('maison') }}">
-                    <div class="img-overlay"></div>
-                    <img src="{{ asset('build/individuel5.png') }}"/>
-                </a>
-                <div class="img-content">
-                    <p><strong>Maison de ville</strong></p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

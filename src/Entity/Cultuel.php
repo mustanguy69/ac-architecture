@@ -81,7 +81,7 @@ class Cultuel
     private $image3File;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $image4;
 
@@ -92,7 +92,7 @@ class Cultuel
     private $image4File;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $image5;
 
@@ -369,4 +369,5 @@ class Cultuel
     {
         return $this->projectFileFile;
     }
+
 }

@@ -6,51 +6,17 @@
   <div class="row realisation-page">
       <div class="col-12 realisation-img">
           <p class="page-title">Logements cultuels</p>
-          <div class="col-4 img">
-              <a href="{{ path('rochette') }}">
-                  <div class="img-overlay"></div>
-                  <img src="{{ asset('build/cultuel1.png') }}"/>
-              </a>
-              <div class="img-content">
-                  <p><strong>Abbaye de la Rochette</strong></p>
+          {% for real in cultuel %}
+              <div class="col-4 img">
+                  <a href="{{ path('cultuel_view', {id: real.id}) }}">
+                      <div class="img-overlay"></div>
+                      <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
+                      <div class="img-content">
+                          <p><strong>{{ real.title }}</strong></p>
+                      </div>
+                  </a>
               </div>
-          </div>
-          <div class="col-4 img">
-              <a href="{{ path('rochette2') }}">
-                  <div class="img-overlay"></div>
-                  <img src="{{ asset('build/cultuel2.png') }}"/>
-              </a>
-              <div class="img-content">
-                  <p><strong>Abbaye de la Rochette 2</strong></p>
-              </div>
-          </div>
-          <div class="col-4 img">
-              <a href="{{ path('rochette') }}">
-                  <div class="img-overlay"></div>
-                  <img src="{{ asset('build/cultuel3.png') }}"/>
-              </a>
-              <div class="img-content">
-                  <p><strong>Abbaye de la Rochette</strong></p>
-              </div>
-          </div>
-          <div class="col-4 img">
-              <a href="{{ path('rochette') }}">
-                  <div class="img-overlay"></div>
-                  <img src="{{ asset('build/cultuel4.png') }}"/>
-              </a>
-              <div class="img-content">
-                  <p><strong>Abbaye de la Rochette</strong></p>
-              </div>
-          </div>
-          <div class="col-4 img">
-              <a href="{{ path('rochette') }}">
-                  <div class="img-overlay"></div>
-                  <img src="{{ asset('build/cultuel5.png') }}"/>
-              </a>
-              <div class="img-content">
-                  <p><strong>Abbaye de la Rochette</strong></p>
-              </div>
-          </div>
+          {% endfor %}
       </div>
   </div>
 
