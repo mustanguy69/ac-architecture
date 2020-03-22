@@ -11,10 +11,10 @@
                     <a href="{{ path('ehpad_view', {id: real.id}) }}">
                         <div class="img-overlay"></div>
                         <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
+                        <div class="img-content">
+                            <p><strong>{{ real.title }}</strong></p>
+                        </div>
                     </a>
-                    <div class="img-content">
-                        <p><strong>{{ real.title }}</strong></p>
-                    </div>
                 </div>
             {% endfor %}
         </div>

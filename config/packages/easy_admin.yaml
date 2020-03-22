@@ -91,14 +91,19 @@ easy_admin:
                 fields:
                     - { property: 'title', label: "Titre de la réalisation :" ,type: 'text' }
                     - { property: 'thumbnailFile', label: "Miniature :" ,type: 'vich_image' }
-                    - { property: 'headerImgFile', label: "Image d'entête :", type: 'vich_image' }
-                    - { property: 'contentHtml', label: "Contenu de la page :" ,type: 'textarea' }
-                    - { property: 'sideImg1File', label: "Image n°1:", type: 'vich_image' }
-                    - { property: 'sideImg2File', label: "Image n°2:", type: 'vich_image' }
-                    - { property: 'sideImg3File', label: "Image n°3:", type: 'vich_image' }
+                    - { property: 'contentRightHtml', label: "Contenu à droite :" ,type: 'textarea' }
+                    - { property: 'contentBottomHtml', label: "Contenu en bas :" ,type: 'textarea' }
+                    - { property: 'image1File', label: "Image n°1:", type: 'vich_image' }
+                    - { property: 'image2File', label: "Image n°2:", type: 'vich_image' }
+                    - { property: 'image3File', label: "Image n°3:", type: 'vich_image' }
+                    - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
+                    - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
             list:
-                fields: ['id', 'thumbnailFile', 'title']
+                fields:
+                    - { property: 'id'}
+                    - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
+                    - { property: 'title', label: 'Titre' }
         Collectif:
               class: App\Entity\Collectif
               form:

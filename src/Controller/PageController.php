@@ -83,7 +83,7 @@ class PageController extends AbstractController
     {
         $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
 
-        return $this->render('sections/carrousel.html.twig', ['reals' => $ehpad]);
+        return $this->render('sections/carrousel-ehpad.html.twig', ['reals' => $ehpad]);
     }
 
     /**
