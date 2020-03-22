@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/Default/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/Default/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Cultuel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cultuel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,11 +171,11 @@
       <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ac-architecture\public\dist" />
       <recent name="D:\wamp64\www\ac-architecture\assets\images" />
       <recent name="D:\wamp64\www\ac-architecture\templates\pages" />
       <recent name="D:\wamp64\www\ac-architecture\templates\bundles\EasyAdminBundle\default" />
       <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
-      <recent name="D:\wamp64\www\ac-architecture\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,7 +215,7 @@
       <workItem from="1584500058498" duration="790000" />
       <workItem from="1584673448199" duration="1280000" />
       <workItem from="1584759541894" duration="5053000" />
-      <workItem from="1584842614250" duration="4686000" />
+      <workItem from="1584842614250" duration="5802000" />
     </task>
     <servers />
   </component>

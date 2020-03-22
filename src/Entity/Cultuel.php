@@ -27,64 +27,80 @@ class Cultuel
     private $title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $thumbnail;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="thumbnail")
-    * @var File
-    */
-    private $thumbnailFile;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @Vich\UploadableField(mapping="images", fileNameProperty="thumbnail")
+     * @var File
      */
-    private $headerImg;
-
-    /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="headerImg")
-    * @var File
-    */
-    private $headerImgFile;
+    private $thumbnailFile;
 
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $contentHtml;
+    private $contentRightHtml;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $contentBottomHtml;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $sideImg1;
+    private $image1;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="sideImg1")
-    * @var File
-    */
-    private $sideImg1File;
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image1")
+     * @var File
+     */
+    private $image1File;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $sideImg2;
+    private $image2;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="sideImg2")
-    * @var File
-    */
-    private $sideImg2File;
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image2")
+     * @var File
+     */
+    private $image2File;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $sideImg3;
+    private $image3;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="sideImg3")
-    * @var File
-    */
-    private $sideImg3File;
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image3")
+     * @var File
+     */
+    private $image3File;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $image4;
+
+    /**
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image4")
+     * @var File
+     */
+    private $image4File;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $image5;
+
+    /**
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image5")
+     * @var File
+     */
+    private $image5File;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -92,16 +108,16 @@ class Cultuel
     private $projectFile;
 
     /**
-    * @Vich\UploadableField(mapping="fiches", fileNameProperty="projectFile")
-    * @var File
-    */
+     * @Vich\UploadableField(mapping="fiches", fileNameProperty="projectFile")
+     * @var File
+     */
     private $projectFileFile;
 
     /**
      * @ORM\Column(type="datetime")
      * @var \DateTime
      */
-     private $updatedAt;
+    private $updatedAt;
 
     public function getId(): ?int
     {
@@ -122,172 +138,214 @@ class Cultuel
 
     public function setThumbnailFile(File $image = null)
     {
-       $this->thumbnailFile = $image;
+        $this->thumbnailFile = $image;
 
-       // VERY IMPORTANT:
-       // It is required that at least one field changes if you are using Doctrine,
-       // otherwise the event listeners won't be called and the file is lost
-       if ($image) {
-           // if 'updatedAt' is not defined in your entity, use another property
-           $this->updatedAt = new \DateTime('now');
-       }
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
     }
 
     public function getThumbnailFile()
     {
-       return $this->thumbnailFile;
+        return $this->thumbnailFile;
     }
 
-    public function getThumbnail(): ?string
+    public function getThumbnail()
     {
         return $this->thumbnail;
     }
 
-    public function setThumbnail(string $thumbnail): self
+    public function setThumbnail($thumbnail): self
     {
         $this->thumbnail = $thumbnail;
 
         return $this;
     }
 
-    public function setHeaderImgFile(File $image = null)
+    public function getContentRightHtml(): ?string
     {
-       $this->headerImgFile = $image;
-
-       // VERY IMPORTANT:
-       // It is required that at least one field changes if you are using Doctrine,
-       // otherwise the event listeners won't be called and the file is lost
-       if ($image) {
-           // if 'updatedAt' is not defined in your entity, use another property
-           $this->updatedAt = new \DateTime('now');
-       }
+        return $this->contentRightHtml;
     }
 
-    public function getHeaderImgFile()
+    public function setContentRightHtml(?string $contentRightHtml): self
     {
-       return $this->headerImgFile;
-    }
-
-    public function getHeaderImg(): ?string
-    {
-        return $this->headerImg;
-    }
-
-    public function setHeaderImg(string $headerImg): self
-    {
-        $this->headerImg = $headerImg;
+        $this->contentRightHtml = $contentRightHtml;
 
         return $this;
     }
 
-    public function getContentHtml(): ?string
+    public function getContentBottomHtml(): ?string
     {
-        return $this->contentHtml;
+        return $this->contentBottomHtml;
     }
 
-    public function setContentHtml(?string $contentHtml): self
+    public function setContentBottomHtml(?string $contentBottomHtml): self
     {
-        $this->contentHtml = $contentHtml;
+        $this->contentBottomHtml = $contentBottomHtml;
 
         return $this;
     }
 
-    public function setSideImg1File(File $image = null)
+    public function setImage1File(File $image = null)
     {
-       $this->sideImg1File = $image;
+        $this->image1File = $image;
 
-       // VERY IMPORTANT:
-       // It is required that at least one field changes if you are using Doctrine,
-       // otherwise the event listeners won't be called and the file is lost
-       if ($image) {
-           // if 'updatedAt' is not defined in your entity, use another property
-           $this->updatedAt = new \DateTime('now');
-       }
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
     }
 
-    public function getSideImg1File()
+    public function getImage1File()
     {
-       return $this->sideImg1File;
+        return $this->image1File;
     }
 
-    public function getSideImg1(): ?string
+    public function getImage1()
     {
-        return $this->sideImg1;
+        return $this->image1;
     }
 
-    public function setSideImg1(?string $sideImg1): self
+    public function setImage1($image1): self
     {
-        $this->sideImg1 = $sideImg1;
+        $this->image1 = $image1;
 
         return $this;
     }
 
-    public function setSideImg2File(File $image = null)
+    public function setImage2File(File $image = null)
     {
-       $this->sideImg2File = $image;
+        $this->image2File = $image;
 
-       // VERY IMPORTANT:
-       // It is required that at least one field changes if you are using Doctrine,
-       // otherwise the event listeners won't be called and the file is lost
-       if ($image) {
-           // if 'updatedAt' is not defined in your entity, use another property
-           $this->updatedAt = new \DateTime('now');
-       }
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
     }
 
-    public function getSideImg2File()
+    public function getImage2File()
     {
-       return $this->sideImg2File;
+        return $this->image2File;
     }
 
-    public function getSideImg2(): ?string
+    public function getImage2()
     {
-        return $this->sideImg2;
+        return $this->image2;
     }
 
-    public function setSideImg2(?string $sideImg2): self
+    public function setImage2($image2): self
     {
-        $this->sideImg2 = $sideImg2;
+        $this->image2 = $image2;
 
         return $this;
     }
 
-    public function setSideImg3File(File $image = null)
+    public function setImage3File(File $image = null)
     {
-       $this->sideImg3File = $image;
+        $this->image3File = $image;
 
-       // VERY IMPORTANT:
-       // It is required that at least one field changes if you are using Doctrine,
-       // otherwise the event listeners won't be called and the file is lost
-       if ($image) {
-           // if 'updatedAt' is not defined in your entity, use another property
-           $this->updatedAt = new \DateTime('now');
-       }
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
     }
 
-    public function getSideImg3File()
+    public function getImage3File()
     {
-       return $this->sideImg3File;
+        return $this->image3File;
     }
 
-    public function getSideImg3(): ?string
+    public function getImage3()
     {
-        return $this->sideImg3;
+        return $this->image3;
     }
 
-    public function setSideImg3(?string $sideImg3): self
+    public function setImage3($image3): self
     {
-        $this->sideImg3 = $sideImg3;
+        $this->image3 = $image3;
 
         return $this;
     }
 
-    public function getProjectFile(): ?string
+    public function setImage4File(File $image = null)
+    {
+        $this->image4File = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getImage4File()
+    {
+        return $this->image4File;
+    }
+
+    public function getImage4()
+    {
+        return $this->image4;
+    }
+
+    public function setImage4($image4): self
+    {
+        $this->image4 = $image4;
+
+        return $this;
+    }
+
+    public function setImage5File(File $image = null)
+    {
+        $this->image5File = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getImage5File()
+    {
+        return $this->image5File;
+    }
+
+    public function getImage5()
+    {
+        return $this->image5;
+    }
+
+    public function setImage5($image5): self
+    {
+        $this->image5 = $image5;
+
+        return $this;
+    }
+
+    public function getProjectFile()
     {
         return $this->projectFile;
     }
 
-    public function setProjectFile(?string $projectFile): self
+    public function setProjectFile($projectFile): self
     {
         $this->projectFile = $projectFile;
 
@@ -296,19 +354,19 @@ class Cultuel
 
     public function setProjectFileFile(File $file = null)
     {
-       $this->projectFileFile = $file;
+        $this->projectFileFile = $file;
 
-       // VERY IMPORTANT:
-       // It is required that at least one field changes if you are using Doctrine,
-       // otherwise the event listeners won't be called and the file is lost
-       if ($file) {
-           // if 'updatedAt' is not defined in your entity, use another property
-           $this->updatedAt = new \DateTime('now');
-       }
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($file) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
     }
 
     public function getProjectFileFile()
     {
-       return $this->projectFileFile;
+        return $this->projectFileFile;
     }
 }

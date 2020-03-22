@@ -5,6 +5,7 @@ namespace App\Controller;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\EasyAdminController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\PropertyAccess\PropertyAccess;
 
 class AdminController extends EasyAdminController
 {
