@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/collectifs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/collectifs.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/cultuels.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/cultuels.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/equipements.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/equipements.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/individuels.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/individuels.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +215,7 @@
       <workItem from="1584500058498" duration="790000" />
       <workItem from="1584673448199" duration="1280000" />
       <workItem from="1584759541894" duration="5053000" />
-      <workItem from="1584842614250" duration="12194000" />
+      <workItem from="1584842614250" duration="13005000" />
     </task>
     <servers />
   </component>

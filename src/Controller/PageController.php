@@ -101,7 +101,7 @@ class PageController extends AbstractController
      */
     public function collectifViewPage($id)
     {
-        $collectif = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+        $collectif = $this->getDoctrine()->getRepository('App:Collectif')->find($id);
 
         return $this->render('pages/collectif-view.html.twig', ['real' => $collectif]);
     }
@@ -111,7 +111,7 @@ class PageController extends AbstractController
      */
     public function collectifCarrouselPage($current)
     {
-        $collectif = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
+        $collectif = $this->getDoctrine()->getRepository('App:Collectif')->findByNot('id', $current);
 
         return $this->render('sections/carrousel-collectif.html.twig', ['reals' => $collectif]);
     }
@@ -131,7 +131,7 @@ class PageController extends AbstractController
      */
     public function individuelViewPage($id)
     {
-        $individuel = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+        $individuel = $this->getDoctrine()->getRepository('App:Individuel')->find($id);
 
         return $this->render('pages/individuel-view.html.twig', ['real' => $individuel]);
     }
@@ -141,7 +141,7 @@ class PageController extends AbstractController
      */
     public function individuelCarrouselPage($current)
     {
-        $individuel = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
+        $individuel = $this->getDoctrine()->getRepository('App:Individuel')->findByNot('id', $current);
 
         return $this->render('sections/carrousel-individuel.html.twig', ['reals' => $individuel]);
     }
@@ -181,7 +181,7 @@ class PageController extends AbstractController
      */
     public function equipementsPage()
     {
-        $equipement = $this->getDoctrine()->getRepository('App:Collectif')->findBy([], ['id' => 'DESC']);
+        $equipement = $this->getDoctrine()->getRepository('App:Equipement')->findBy([], ['id' => 'DESC']);
 
         return $this->render('pages/equipements.html.twig', ['equipement' => $equipement]);
     }
@@ -191,7 +191,7 @@ class PageController extends AbstractController
      */
     public function equipementViewPage($id)
     {
-        $equipement = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+        $equipement = $this->getDoctrine()->getRepository('App:Equipement')->find($id);
 
         return $this->render('pages/equipement-view.html.twig', ['real' => $equipement]);
     }
@@ -201,7 +201,7 @@ class PageController extends AbstractController
      */
     public function equipementCarrouselPage($current)
     {
-        $equipement = $this->getDoctrine()->getRepository('App:EHPAD')->findByNot('id', $current);
+        $equipement = $this->getDoctrine()->getRepository('App:Equipement')->findByNot('id', $current);
 
         return $this->render('sections/carrousel-equipement.html.twig', ['reals' => $equipement]);
     }
