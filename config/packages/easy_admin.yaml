@@ -8,7 +8,7 @@ easy_admin:
         assets:
             js:
                 - 'https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yq0h5mlf29y38s38t1vdx23xv0kv6tc5g5f6g7mo95cjwxv0'
-                - '/build/app.js'
+                - 'dist/tiny.js'
         menu:
             - label: 'Pages'
               children:
