@@ -4,19 +4,6 @@
     <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/caritas1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/caritas2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/caritas3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/ehpad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/EHPAD.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/EHPAD.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/ehpad-view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad-view.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/ehpad.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/rochette.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sections/carrousel.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sections/carrousel-ehpad.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sections/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sections/menu.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,15 +151,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ac-architecture\public\uploads\images" />
+      <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\ac-architecture\assets\images" />
       <recent name="D:\wamp64\www\ac-architecture\templates\pages" />
       <recent name="D:\wamp64\www\ac-architecture\templates\bundles\EasyAdminBundle\default" />
       <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
       <recent name="D:\wamp64\www\ac-architecture\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\ac-architecture\templates\sections" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,7 +200,7 @@
       <workItem from="1584500058498" duration="790000" />
       <workItem from="1584673448199" duration="1280000" />
       <workItem from="1584759541894" duration="5053000" />
-      <workItem from="1584842614250" duration="1621000" />
+      <workItem from="1584842614250" duration="2408000" />
     </task>
     <servers />
   </component>
