@@ -2,7 +2,7 @@
     <p class="page-title">AUTRES RÉALISATIONS EQUIPEMENTS</p>
     <div class="owl-carousel">
         {% for real in reals %}
-            <a href="{{ path('equipement_view', {id: real.id}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
+            <a href="{{ path('equipement_view', {slug: real.slug}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
         {% endfor %}
     </div>
 </div>

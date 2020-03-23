@@ -67,11 +67,11 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/realisations/ehpad/{id}", name="ehpad_view")
+     * @Route("/realisations/ehpad/{slug}", name="ehpad_view")
      */
-    public function ehpadViewPage($id)
+    public function ehpadViewPage($slug)
     {
-        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->find($id);
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findOneBy((['slug' => $slug]));
 
         return $this->render('pages/ehpad-view.html.twig', ['real' => $ehpad]);
     }
@@ -97,11 +97,11 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/realisations/logements-collectifs/{id}", name="collectif_view")
+     * @Route("/realisations/logements-collectifs/{slug}", name="collectif_view")
      */
-    public function collectifViewPage($id)
+    public function collectifViewPage($slug)
     {
-        $collectif = $this->getDoctrine()->getRepository('App:Collectif')->find($id);
+        $collectif = $this->getDoctrine()->getRepository('App:Collectif')->findOneBy((['slug' => $slug]));
 
         return $this->render('pages/collectif-view.html.twig', ['real' => $collectif]);
     }
@@ -127,11 +127,11 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/realisations/logements-individuels/{id}", name="individuel_view")
+     * @Route("/realisations/logements-individuels/{slug}", name="individuel_view")
      */
-    public function individuelViewPage($id)
+    public function individuelViewPage($slug)
     {
-        $individuel = $this->getDoctrine()->getRepository('App:Individuel')->find($id);
+        $individuel = $this->getDoctrine()->getRepository('App:Individuel')->findOneBy((['slug' => $slug]));
 
         return $this->render('pages/individuel-view.html.twig', ['real' => $individuel]);
     }
@@ -157,11 +157,11 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/realisations/lieux-cultuels/{id}", name="cultuel_view")
+     * @Route("/realisations/lieux-cultuels/{slug}", name="cultuel_view")
      */
-    public function cultuelViewPage($id)
+    public function cultuelViewPage($slug)
     {
-        $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->find($id);
+        $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->findOneBy((['slug' => $slug]));
 
         return $this->render('pages/ehpad-view.html.twig', ['real' => $cultuel]);
     }
@@ -187,11 +187,11 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/realisations/logements-equipements/{id}", name="equipement_view")
+     * @Route("/realisations/logements-equipements/{slug}", name="equipement_view")
      */
-    public function equipementViewPage($id)
+    public function equipementViewPage($slug)
     {
-        $equipement = $this->getDoctrine()->getRepository('App:Equipement')->find($id);
+        $equipement = $this->getDoctrine()->getRepository('App:Equipement')->findOneBy((['slug' => $slug]));
 
         return $this->render('pages/equipement-view.html.twig', ['real' => $equipement]);
     }

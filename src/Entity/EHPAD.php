@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\String\Slugger\AsciiSlugger;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\EHPADRepository")
@@ -114,10 +115,16 @@ class EHPAD
     private $projectFileFile;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
+
+    /**
      * @ORM\Column(type="datetime")
      * @var \DateTime
      */
      private $updatedAt;
+
 
     public function getId(): ?int
     {
@@ -132,6 +139,10 @@ class EHPAD
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        $slugger = new AsciiSlugger();
+        $value = $slugger->slug($title);
+        $this->setSlug($value->folded()->toString());
 
         return $this;
     }
@@ -368,5 +379,17 @@ class EHPAD
     public function getProjectFileFile()
     {
        return $this->projectFileFile;
+    }
+
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    public function setSlug($slug): self
+    {
+        $this->slug = $slug;
+
+        return $this;
     }
 }

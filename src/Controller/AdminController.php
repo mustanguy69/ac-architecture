@@ -3,9 +3,11 @@
 namespace App\Controller;
 
 use EasyCorp\Bundle\EasyAdminBundle\Controller\EasyAdminController;
+use EasyCorp\Bundle\EasyAdminBundle\Event\EasyAdminEvents;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\PropertyAccess\PropertyAccess;
+use Symfony\Component\String\Slugger\AsciiSlugger;
 
 class AdminController extends EasyAdminController
 {

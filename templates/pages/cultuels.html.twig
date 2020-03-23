@@ -8,7 +8,7 @@
           <p class="page-title">Logements cultuels</p>
           {% for real in cultuel %}
               <div class="col-4 img" {% if loop.index % 3 == 0 %}style="margin-right: 0"{% endif %}>
-                  <a href="{{ path('cultuel_view', {id: real.id}) }}">
+                  <a href="{{ path('cultuel_view', {slug: real.slug}) }}">
                       <div class="img-overlay"></div>
                       <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
                       <div class="img-content">
