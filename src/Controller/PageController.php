@@ -121,7 +121,7 @@ class PageController extends AbstractController
      */
     public function individuelsPage()
     {
-        $individuel = $this->getDoctrine()->getRepository('App:Collectif')->findBy([], ['id' => 'DESC']);
+        $individuel = $this->getDoctrine()->getRepository('App:Individuel')->findBy([], ['id' => 'DESC']);
 
         return $this->render('pages/individuels.html.twig', ['individuel' => $individuel]);
     }
@@ -163,7 +163,7 @@ class PageController extends AbstractController
     {
         $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->findOneBy((['slug' => $slug]));
 
-        return $this->render('pages/ehpad-view.html.twig', ['real' => $cultuel]);
+        return $this->render('pages/cultuel-view.html.twig', ['real' => $cultuel]);
     }
 
     /**
