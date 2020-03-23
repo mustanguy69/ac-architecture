@@ -153,7 +153,7 @@ class PageController extends AbstractController
     {
         $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->findBy([], ['id' => 'DESC']);
 
-        return $this->render('pages/cultuels.html.twig');
+        return $this->render('pages/cultuels.html.twig', ['cultuel' => $cultuel]);
     }
 
     /**
