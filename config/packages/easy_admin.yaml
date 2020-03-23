@@ -119,11 +119,11 @@ easy_admin:
                       - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                       - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
                       - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
-                  list:
-                      fields:
-                          - { property: 'id'}
-                          - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
-                          - { property: 'title', label: 'Titre' }
+              list:
+                  fields:
+                      - { property: 'id'}
+                      - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
+                      - { property: 'title', label: 'Titre' }
         Individuel:
             class: App\Entity\Individuel
             form:
@@ -138,11 +138,11 @@ easy_admin:
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
-                list:
-                    fields:
-                        - { property: 'id'}
-                        - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
-                        - { property: 'title', label: 'Titre' }
+            list:
+                fields:
+                    - { property: 'id'}
+                    - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
+                    - { property: 'title', label: 'Titre' }
         Cultuel:
             class: App\Entity\Cultuel
             form:
@@ -157,11 +157,11 @@ easy_admin:
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
-                list:
-                    fields:
-                        - { property: 'id'}
-                        - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
-                        - { property: 'title', label: 'Titre' }
+            list:
+                fields:
+                    - { property: 'id'}
+                    - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
+                    - { property: 'title', label: 'Titre' }
         Equipement:
             class: App\Entity\Equipement
             form:
@@ -176,8 +176,8 @@ easy_admin:
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
-                list:
-                    fields:
-                        - { property: 'id'}
-                        - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
-                        - { property: 'title', label: 'Titre' }
+            list:
+                fields:
+                    - { property: 'id'}
+                    - { property: 'thumbnail', type: 'image', label: 'Image', base_path: '%app.path.images%' }
+                    - { property: 'title', label: 'Titre' }
