@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/Default/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/Default/layout.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="96bb215c-b079-42e7-8e72-3e780c913268" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +214,7 @@
       <workItem from="1584673448199" duration="1280000" />
       <workItem from="1584759541894" duration="5053000" />
       <workItem from="1584842614250" duration="14696000" />
-      <workItem from="1584935758963" duration="6453000" />
+      <workItem from="1584935758963" duration="6729000" />
     </task>
     <servers />
   </component>
