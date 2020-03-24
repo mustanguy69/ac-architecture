@@ -12,5 +12,5 @@ class MentionsRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Mentions::class);
     }
-
+    
 }
