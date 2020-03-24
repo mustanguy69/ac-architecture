@@ -12,5 +12,5 @@ class ProtectionRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Protection::class);
     }
-    
+
 }
