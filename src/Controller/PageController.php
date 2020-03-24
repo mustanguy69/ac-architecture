@@ -227,7 +227,9 @@ class PageController extends AbstractController
      */
     public function protectionPage()
     {
-        return $this->render('pages/protection.html.twig');
+        $protection = $this->getDoctrine()->getRepository('App:Protection')->find(1);
+
+        return $this->render('pages/protection.html.twig', ['protection' => $protection]);
     }
 
     /**
@@ -235,7 +237,9 @@ class PageController extends AbstractController
      */
     public function mentionsPage()
     {
-        return $this->render('pages/mentions.html.twig');
+        $mentions = $this->getDoctrine()->getRepository('App:Mentions')->find(1);
+
+        return $this->render('pages/mentions.html.twig', ['mentions' => $mentions]);
     }
 
 }

@@ -16,6 +16,8 @@ easy_admin:
                   - { label: "L'agence - Equipe", entity: 'Equipe', params: { action: 'edit', id: 1 } }
                   - { label: "L'agence - Organisation", entity: 'Organisation', params: { action: 'edit', id: 1 } }
                   - { label: "Services", entity: 'Services', params: { action: 'edit', id: 1 } }
+                  - { label: "Mentions Légales", entity: 'Mentions', params: { action: 'edit', id: 1 } }
+                  - { label: "Protection des données", entity: 'Protection', params: { action: 'edit', id: 1 } }
             - label: 'Réalisations'
               children:
                   - { label: "EHPAD", entity: 'EHPAD'}
@@ -86,6 +88,18 @@ easy_admin:
                 fields:
                     - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
                     - { property: 'imageFile', type: 'vich_image' }
+        Mentions:
+            disabled_actions: ['delete', 'list']
+            class: App\Entity\Mentions
+            form:
+                fields:
+                    - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
+        Protection:
+            disabled_actions: ['delete', 'list']
+            class: App\Entity\Protection
+            form:
+                fields:
+                    - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
         EHPAD:
             class: App\Entity\EHPAD
             form:
