@@ -1,6 +1,6 @@
 $(function () {
     tinymce.init({
-        content_css : '/build/app.css',
+        content_css : '../build/app.css',
         selector: "textarea",
         height: 400,
         plugins: [
