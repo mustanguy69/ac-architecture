@@ -87,7 +87,7 @@ easy_admin:
                 fields:
                     - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
                     - { property: 'imageFile', type: 'vich_image' }
-                    - { property: 'schemaFile', label: "Schéma :" ,type: 'vich_image' }
+                    - { property: 'schFile', label: "Schéma :" ,type: 'vich_image' }
                     - { property: 'arreteFile', label: "Arrêté de loi :" ,type: 'vich_file' }
         Mentions:
             disabled_actions: ['delete', 'list']
