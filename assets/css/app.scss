@@ -338,12 +338,8 @@ strong {
 }
 
 .services-page {
-    .col-8 {
-        padding-right: 40px;
-        p {
-            font-size: 11pt;
-        }
-        
+    p {
+        font-size: 11pt;
     }
 
     .service-img {
@@ -496,7 +492,15 @@ strong {
 }
 
 .real-page {
-  .col-4 {
-    padding-left: 20px;
-  }
+    .col-4 {
+        padding-left: 20px;
+    }
+
+    .bottom {
+        margin-top: -30px;
+    }
+
+    // .fiche {
+    //     margin-top: -96px;
+    // }
 }
