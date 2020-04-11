@@ -116,7 +116,7 @@ class Services
 
     public function setSchFile(File $sch = null)
     {
-       $this->sch = $sch;
+       $this->schFile = $sch;
 
        // VERY IMPORTANT:
        // It is required that at least one field changes if you are using Doctrine,
