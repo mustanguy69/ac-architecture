@@ -4,11 +4,21 @@
 
 {% block body %}
     <div class="row services-page">
-        <div class="col-6">
+        <div class="col-8">
             {{ services.contentHtml | raw }}
         </div>
-        <div class="col-6">
-            <img src="{{ vich_uploader_asset(services, 'imageFile') }}"/>
+        <div class="col-4">
+            <img class="service-img" src="{{ vich_uploader_asset(services, 'imageFile') }}"/>
+        </div>
+        <div class="col-8 schema">
+            {% if services.schema %}
+                <img src="{{ vich_uploader_asset(services, 'schemaFile') }}"/>
+            {% endif %}
+        </div>
+        <div class="col-4 link">
+            {% if services.schema %}
+                <p><a href="{{ vich_uploader_asset(services, 'arreteFile') }}" download><img src="{{ asset('build/pdf.png') }}"/> Téléchargez l’Arrêté de la Loi MOP</a></p>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

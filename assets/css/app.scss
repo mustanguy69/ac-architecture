@@ -227,14 +227,13 @@ strong {
                 margin-right: 15px;
             }
         }
-
     }
 
     input[type=submit] {
         background-color: $blue;
         text-align: center;
         color: white;
-        margin: 80px auto 10px auto;
+        margin: 40px auto 10px auto;
         display: block;
         width: 150px;
         height: 35px;
@@ -335,6 +334,32 @@ strong {
         &:first-of-type {
             padding-right: 20px;
         }
+    }
+}
+
+.services-page {
+    .col-8 {
+        padding-right: 40px;
+        p {
+            font-size: 11pt;
+        }
+        
+    }
+
+    .service-img {
+        width:100%;
+    }
+
+    .schema {
+        padding-top: 10px;
+    }
+
+    .link {
+        a {
+            color: black;
+            text-decoration: none;
+        } 
+        padding-top: 30px;
     }
 }
 

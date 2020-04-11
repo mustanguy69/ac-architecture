@@ -37,6 +37,29 @@ class Services
     */
     private $imageFile;
 
+    /**
+     * @ORM\Column(type="string", name="schemaa",length=255, nullable=true)
+     */
+    private $schema;
+
+    /**
+    * @Vich\UploadableField(mapping="schema", fileNameProperty="schema")
+    * @var File
+    */
+    private $schemaFile;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $arrete;
+
+    /**
+    * @Vich\UploadableField(mapping="arrete", fileNameProperty="arrete")
+    * @var File
+    */
+    private $arreteFile;
+
+
    /**
     * @ORM\Column(type="datetime")
     * @var \DateTime
@@ -91,4 +114,63 @@ class Services
         return $this;
     }
 
+    public function setSchemaFile(File $schema = null)
+    {
+       $this->schemaFile = $schema;
+
+       // VERY IMPORTANT:
+       // It is required that at least one field changes if you are using Doctrine,
+       // otherwise the event listeners won't be called and the file is lost
+       if ($schema) {
+           // if 'updatedAt' is not defined in your entity, use another property
+           $this->updatedAt = new \DateTime('now');
+       }
+    }
+
+    public function getSchemaFile()
+    {
+       return $this->schemaFile;
+    }
+
+    public function getSchema(): ?string
+    {
+        return $this->schema;
+    }
+
+    public function setSchema(?string $schema): self
+    {
+        $this->schema = $schema;
+
+        return $this;
+    }
+
+    public function setArreteFile(File $arrete = null)
+    {
+       $this->arreteFile = $arrete;
+
+       // VERY IMPORTANT:
+       // It is required that at least one field changes if you are using Doctrine,
+       // otherwise the event listeners won't be called and the file is lost
+       if ($arrete) {
+           // if 'updatedAt' is not defined in your entity, use another property
+           $this->updatedAt = new \DateTime('now');
+       }
+    }
+
+    public function getArreteFile()
+    {
+       return $this->arreteFile;
+    }
+
+    public function getArrete(): ?string
+    {
+        return $this->arrete;
+    }
+
+    public function setArrete(?string $arrete): self
+    {
+        $this->arrete = $arrete;
+
+        return $this;
+    }
 }

@@ -6,7 +6,8 @@
 parameters:
     app.path.images: /uploads/images
     app.path.fiches: /uploads/fiches
-
+    app.path.schema: /uploads/schema
+    app.path.arrete: /uploads/arrete
 services:
     # default configuration for services in *this* file
     _defaults:

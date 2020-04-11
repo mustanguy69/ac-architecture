@@ -1,5 +1,5 @@
 <div class="col-12">
-    <p class="page-title">AUTRES RÉALISATIONS LOGEMENTS COLLECTIFS</p>
+    <p class="page-title">Autres réalisations Logements collectifs</p>
     <div class="owl-carousel">
         {% for real in reals %}
             <a href="{{ path('collectif_view', {slug: real.slug}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>

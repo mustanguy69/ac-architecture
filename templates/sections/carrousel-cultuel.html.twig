@@ -1,5 +1,5 @@
 <div class="col-12">
-    <p class="page-title">AUTRES RÉALISATIONS LIEUX CULTUELS</p>
+    <p class="page-title">Autres réalisations Lieux cultuels</p>
     <div class="owl-carousel">
         {% for real in reals %}
             <a href="{{ path('cultuel_view', {slug: real.slug}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>

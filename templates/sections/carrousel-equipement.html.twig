@@ -1,5 +1,5 @@
 <div class="col-12">
-    <p class="page-title">AUTRES RÉALISATIONS EQUIPEMENTS</p>
+    <p class="page-title">Autres réalisations Equipements</p>
     <div class="owl-carousel">
         {% for real in reals %}
             <a href="{{ path('equipement_view', {slug: real.slug}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
