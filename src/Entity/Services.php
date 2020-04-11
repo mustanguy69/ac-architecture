@@ -40,10 +40,10 @@ class Services
     /**
      * @ORM\Column(type="string", name="schemaa",length=255, nullable=true)
      */
-    private $schema;
+    private $schemaa;
 
     /**
-    * @Vich\UploadableField(mapping="schema", fileNameProperty="schema")
+    * @Vich\UploadableField(mapping="schemaa", fileNameProperty="schemaa")
     * @var File
     */
     private $schemaFile;
@@ -114,14 +114,14 @@ class Services
         return $this;
     }
 
-    public function setSchemaFile(File $schema = null)
+    public function setSchemaFile(File $schemaa = null)
     {
-       $this->schemaFile = $schema;
+       $this->schemaFile = $schemaa;
 
        // VERY IMPORTANT:
        // It is required that at least one field changes if you are using Doctrine,
        // otherwise the event listeners won't be called and the file is lost
-       if ($schema) {
+       if ($schemaa) {
            // if 'updatedAt' is not defined in your entity, use another property
            $this->updatedAt = new \DateTime('now');
        }
@@ -132,14 +132,14 @@ class Services
        return $this->schemaFile;
     }
 
-    public function getSchema(): ?string
+    public function getSchemaa(): ?string
     {
-        return $this->schema;
+        return $this->schemaa;
     }
 
-    public function setSchema(?string $schema): self
+    public function setSchemaa(?string $schemaa): self
     {
-        $this->schema = $schema;
+        $this->schemaa = $schemaa;
 
         return $this;
     }
