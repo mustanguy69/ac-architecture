@@ -5,7 +5,7 @@
 {% block body %}
     <div class="row real-page">
         <div class="col-12">
-            <p><a href="{{ path('cultuels') }}" class="page-title">EHPAD</a> > <span class="real-breadcrumb">{{ real.title }}</span></p>
+            <p><a href="{{ path('cultuels') }}" class="page-title">Lieux cultuels</a> > <span class="real-breadcrumb">{{ real.title }}</span></p>
         </div>
         <div class="col-8">
             <div class="owl-carousel owl-real">
@@ -21,6 +21,9 @@
                 {% endif %}
                 {% if real.image5 %}
                     <img src="{{ vich_uploader_asset(real, 'image5File') }}"/>
+                {% endif %}
+                {% if real.image6 %}
+                    <img src="{{ vich_uploader_asset(real, 'image6File') }}"/>
                 {% endif %}
             </div>
             <script>

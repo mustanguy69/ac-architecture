@@ -108,6 +108,7 @@ easy_admin:
                     - { property: 'image3File', label: "Image n°3:", type: 'vich_image' }
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
+                    - { property: 'image6File', label: "Image n°6:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
             list:
                 fields:
@@ -127,6 +128,7 @@ easy_admin:
                       - { property: 'image3File', label: "Image n°3:", type: 'vich_image' }
                       - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                       - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
+                      - { property: 'image6File', label: "Image n°6:", type: 'vich_image' }
                       - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
               list:
                   fields:
@@ -146,6 +148,7 @@ easy_admin:
                     - { property: 'image3File', label: "Image n°3:", type: 'vich_image' }
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
+                    - { property: 'image6File', label: "Image n°6:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
             list:
                 fields:
@@ -165,6 +168,7 @@ easy_admin:
                     - { property: 'image3File', label: "Image n°3:", type: 'vich_image' }
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
+                    - { property: 'image6File', label: "Image n°6:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
             list:
                 fields:
@@ -184,6 +188,7 @@ easy_admin:
                     - { property: 'image3File', label: "Image n°3:", type: 'vich_image' }
                     - { property: 'image4File', label: "Image n°4:", type: 'vich_image' }
                     - { property: 'image5File', label: "Image n°5:", type: 'vich_image' }
+                    - { property: 'image6File', label: "Image n°6:", type: 'vich_image' }
                     - { property: 'projectFileFile', label: "Fiche projet:", type: 'vich_file' }
             list:
                 fields:

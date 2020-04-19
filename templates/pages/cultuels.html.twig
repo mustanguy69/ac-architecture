@@ -5,7 +5,7 @@
 {% block body %}
   <div class="row realisation-page">
       <div class="col-12 realisation-img">
-          <p class="page-title">Logements cultuels</p>
+          <p class="page-title">Lieux cultuels</p>
           {% for real in cultuel %}
               <div class="col-4 img" {% if loop.index % 3 == 0 %}style="margin-right: 0"{% endif %}>
                   <a href="{{ path('cultuel_view', {slug: real.slug}) }}">

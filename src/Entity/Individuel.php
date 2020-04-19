@@ -107,6 +107,18 @@ class Individuel
      */
     private $projectFile;
 
+         /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $image6;
+
+    /**
+     * @Vich\UploadableField(mapping="images", fileNameProperty="image6")
+     * @var File
+     */
+    private $image6File;
+
+
     /**
      * @Vich\UploadableField(mapping="fiches", fileNameProperty="projectFile")
      * @var File
@@ -348,6 +360,37 @@ class Individuel
 
         return $this;
     }
+
+    public function setImage6File(File $image = null)
+    {
+        $this->image6File = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getImage6File()
+    {
+        return $this->image6File;
+    }
+
+    public function getImage6()
+    {
+        return $this->image6;
+    }
+
+    public function setImage6($image6): self
+    {
+        $this->image6 = $image6;
+
+        return $this;
+    }
+
 
     public function getProjectFile()
     {

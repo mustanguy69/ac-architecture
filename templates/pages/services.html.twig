@@ -3,6 +3,8 @@
 {% block title %}Services{% endblock %}
 
 {% block body %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('dist/zoom.css') }}">
+    <script src="{{ asset('dist/zoom.js') }}"></script>
     <div class="row services-page">
         <div class="col-8">
             {{ services.contentHtml | raw }}
@@ -12,7 +14,7 @@
         </div>
         <div class="col-8 schema">
             {% if services.sch %}
-                <img src="{{ vich_uploader_asset(services, 'schFile') }}"/>
+                <img class="schema-img" data-action="zoom" src="{{ vich_uploader_asset(services, 'schFile') }}"/>
             {% endif %}
         </div>
         <div class="col-4 link">
