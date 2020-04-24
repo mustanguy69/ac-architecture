@@ -20,7 +20,7 @@ easy_admin:
             - label: 'Réalisations'
               children:
                   - { label: "EHPAD", entity: 'EHPAD'}
-                  - { label: "Logement Colectifs", entity: 'Collectif'}
+                  - { label: "Logement Collectifs", entity: 'Collectif'}
                   - { label: "Logement Individuels", entity: 'Individuel'}
                   - { label: "Lieux Cultuels", entity: 'Cultuel'}
                   - { label: "Equipements", entity: 'Equipement'}
