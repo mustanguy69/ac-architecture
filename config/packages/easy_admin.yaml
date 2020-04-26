@@ -17,6 +17,7 @@ easy_admin:
                   - { label: "L'agence - Organisation", entity: 'Organisation', params: { action: 'edit', id: 1 } }
                   - { label: "Services", entity: 'Services', params: { action: 'edit', id: 1 } }
                   - { label: "Mentions Légales", entity: 'Mentions', params: { action: 'edit', id: 1 } }
+                  - { label: "Contact", entity: 'Contact', params: { action: 'edit', id: 1 } }
             - label: 'Réalisations'
               children:
                   - { label: "EHPAD", entity: 'EHPAD'}
@@ -95,6 +96,13 @@ easy_admin:
             form:
                 fields:
                     - { property: 'contentHtml', label: "Contenu de la Page :" ,type: 'textarea' }
+        Contact:
+            disabled_actions: ['delete', 'list']
+            class: App\Entity\Contact
+            form:
+                fields:
+                    - { property: 'email', label: "Email pour formulaire :", type: 'text' }
+                    - { property: 'address', label: "Adresse :" ,type: 'textarea' }
         EHPAD:
             class: App\Entity\EHPAD
             form:

@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class PageController extends AbstractController
 {
@@ -207,12 +208,45 @@ class PageController extends AbstractController
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact/", name="contact")
      */
-    public function contactPage()
+    public function contactPage(Request $request, \Swift_Mailer $mailer)
     {
-        return $this->render('pages/contact.html.twig');
+        $contact = $this->getDoctrine()->getRepository('App:Contact')->find(1);
+
+        if ($request->isMethod('POST')) {
+            $emailTo = $contact->getEmail();
+            $represente = $request->request->get('represente');
+            $cherche = $request->request->get('cherche');
+            $pour = $request->request->get('pour');
+            $email = $request->request->get('email');
+            $firstname = $request->request->get('firstname');
+            $lastname = $request->request->get('lastname');
+            $tel = $request->request->get('tel');
+
+            $message = (new \Swift_Message('Contact sur AC-Architecture'))
+            ->setFrom($emailTo)
+            ->setTo($emailTo)
+            ->setBody(
+                '<p>Je represente : '. $represente . '</p>'.
+                '<p>Je cherche : '. $cherche . '</p>'.
+                '<p>Pour : '. $pour . '</p>'.
+                '<p>Email : '. $email . '</p>'.
+                '<p>Prenom : '. $firstname . '</p>'.
+                '<p>Nom : '. $lastname . '</p>'.
+                '<p>Tel : '. $tel . '</p>',
+                'text/html'
+            );
+
+            $mailer->send($message);
+
+            $this->addFlash('success', 'Email envoyé avec succès !');
+
+        }
+
+        return $this->render('pages/contact.html.twig', ["contact" => $contact]);
     }
+
 
     /**
      * @Route("/inspirations", name="inspirations")

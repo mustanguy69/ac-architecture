@@ -7,7 +7,7 @@
         <div class="col-12">
             <p><a href="{{ path('equipements') }}" class="page-title">Equipements</a> > <span class="real-breadcrumb">{{ real.title }}</span></p>
         </div>
-        <div class="col-8">
+        <div class="col-12 col-lg-8 col-md-12 col-sm-12">
             <div class="owl-carousel owl-real">
                 <img src="{{ vich_uploader_asset(real, 'image1File') }}"/>
                 {% if real.image2 %}
@@ -38,15 +38,15 @@
                 });
             </script>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4 col-md-12 col-sm-12">
             {{ real.contentRightHtml | raw }}
         </div>
 
-        <div class="col-8 bottom">
+        <div class="col-12 col-lg-8 col-md-12 col-sm-12 bottom">
             {{ real.contentBottomHtml | raw }}
         </div>
 
-        <div class="col-4 fiche">
+        <div class="col-12 col-lg-4 col-md-12 col-sm-12 fiche">
             <p><a href="{{ vich_uploader_asset(real, 'projectFileFile') }}" download><img src="{{ asset('build/pdf.png') }}"/>  T&eacute;l&eacute;chargez la fiche projet</a></p>
         </div>
 

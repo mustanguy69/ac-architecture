@@ -4,10 +4,11 @@
 
 {% block body %}
     <div class="row presentation-page">
-        <div class="col-6">
+        <div class="col-lg-6 col-12">
             {{ presentation.contentHtml | raw }}
+            <br>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-12">
             <img src="{{ vich_uploader_asset(presentation, 'imageFile') }}"/>
         </div>
     </div>
