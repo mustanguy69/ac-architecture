@@ -30,13 +30,14 @@ class Realisations
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $image;
+    private $entete;
 
     /**
-     * @Vich\UploadableField(mapping="images", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="images", fileNameProperty="entete")
      * @var File
      */
-    private $imageFile;
+    private $enteteFile;
+
 
     public function getId(): ?int
     {
@@ -55,9 +56,9 @@ class Realisations
         return $this;
     }
 
-    public function setImageFile(File $image = null)
+    public function setEnteteFile(File $image = null)
     {
-        $this->imageFile = $image;
+        $this->enteteFile = $image;
 
         // VERY IMPORTANT:
         // It is required that at least one field changes if you are using Doctrine,
@@ -68,19 +69,19 @@ class Realisations
         }
     }
 
-    public function getImageFile()
+    public function getEnteteFile()
     {
-        return $this->imageFile;
+        return $this->enteteFile;
     }
 
-    public function getImage()
+    public function getEntete()
     {
-        return $this->image;
+        return $this->entete;
     }
 
-    public function setImage($image): self
+    public function setEntete($entete): self
     {
-        $this->image = $image;
+        $this->entete = $entete;
 
         return $this;
     }

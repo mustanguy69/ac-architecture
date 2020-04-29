@@ -97,7 +97,7 @@ easy_admin:
             form:
                 fields:
                     - { property: 'displayLimit', label: "Nombre de realisation a afficher :" ,type: 'text' }
-                    - { property: 'imageFile', label: "Image d'entête :" ,type: 'vich_image' }
+                    - { property: 'enteteFile', label: "Image d'entête :" ,type: 'vich_image' }
         Mentions:
             disabled_actions: ['delete', 'list']
             class: App\Entity\Mentions
@@ -111,7 +111,7 @@ easy_admin:
                 fields:
                     - { property: 'email', label: "Email pour formulaire :", type: 'text' }
                     - { property: 'address', label: "Adresse :" ,type: 'textarea' }
-                    - { property: 'imageFile', label: "Image d'entête :" ,type: 'vich_image' }
+                    - { property: 'enteteFile', label: "Image d'entête :" ,type: 'vich_image' }
         EHPAD:
             class: App\Entity\EHPAD
             form:
