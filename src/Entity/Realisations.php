@@ -6,11 +6,12 @@ use Doctrine\ORM\Mapping as ORM;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\HttpFoundation\File\File;
 
+
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ContactRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\RealisationsRepository")
  * @Vich\Uploadable
  */
-class Contact
+class Realisations
 {
     /**
      * @ORM\Id()
@@ -20,16 +21,11 @@ class Contact
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="integer", length=255, nullable=true)
      */
-    private $email;
+    private $displayLimit;
 
     /**
-     * @ORM\Column(type="text", nullable=true)
-     */
-    private $address;
-
-     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $image;
@@ -40,33 +36,19 @@ class Contact
      */
     private $imageFile;
 
-
-
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getEmail(): ?string
+    public function getDisplayLimit(): ?int
     {
-        return $this->email;
+        return $this->displayLimit;
     }
 
-    public function setEmail(?string $email): self
+    public function setDisplayLimit(?int $displayLimit): self
     {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    public function getAddress(): ?string
-    {
-        return $this->address;
-    }
-
-    public function setAddress(?string $address): self
-    {
-        $this->address = $address;
+        $this->displayLimit = $displayLimit;
 
         return $this;
     }
@@ -100,5 +82,4 @@ class Contact
 
         return $this;
     }
-
 }

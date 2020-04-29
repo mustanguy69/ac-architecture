@@ -1,8 +1,15 @@
 <div class="row menu-container">
-    <div class="col-3">
+    <div class="col-6 col-xl-3 col-lg-3">
         <a href="{{ path('homepage') }}"><img src="{{ asset('build/logo.png') }}" alt="logo AC Architecture" class="logo"/></a>
     </div>
-    <ul class="menu-links col align-self-flex-end text-right d-none d-xl-flex">
+    <div class="col-6 d-xl-none d-lg-none d-flex justify-content-end">
+        <div class="menu-hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <ul class="menu-links col-9 align-self-flex-end text-right d-none d-lg-flex d-xl-flex">
         <li class="dropdown">
             {% set agence = ["presentation", "equipe", "organisation"] %}
             <a href="" id="agence-link" aria-haspopup="true" aria-expanded="false"
@@ -35,3 +42,24 @@
         <li><a href="{{ path('inspirations') }}" class="{% if app.request.get('_route') == 'inspirations' %}active{% endif %}">INSPIRATIONS</a></li>
     </ul>
 </div>
+
+<div class="hamburger-menu-container">
+    <a class="close-menu"></a>
+    <a href="{{ path('homepage') }}"><img src="{{ asset('build/logo-blanc.png') }}" /></a>
+    <a href="{{ path('homepage') }}" >L'AGENCE</a>
+    <a href="{{ path('equipe') }}" >L'EQUIPE</a>
+    <a href="{{ path('services') }}" >SERVICES</a>
+    <a href="{{ path('realisations-all') }}" >REALISATIONS</a>
+    <a href="{{ path('contact') }}" >CONTACTS</a>
+    <a href="{{ path('mentions') }}" >MENTIONS LEGALES</a>
+</div>
+
+<script>
+    $('.menu-hamburger').on('click', function () {
+        $('.hamburger-menu-container').fadeIn();
+    });
+
+    $('.close-menu').on('click', function () {
+        $('.hamburger-menu-container').fadeOut();
+    });
+</script>

@@ -4,15 +4,23 @@
 
 {% block body %}
     <div class="row equipe-page">
+        <div class="d-xl-none d-lg-none mobile-header" style="background-image: url({{ vich_uploader_asset(presentation, 'imageFile') }})"></div>
         <div class="col-lg-6 col-12">
             {{ equipe.contentHtml | raw }}
             <br>
         </div>
         <div class="col-lg-6 col-12 equipe-img">
             <div class="img col-lg-4 col-12" data-cv="1">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe1File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe1Name }}</strong></p>
+                    <p>{{ equipe.equipe1Role }}</p>
+                    {% if equipe.equipe1Role2 %}
+                        <p>{{ equipe.equipe1Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe1Name }}</strong></p>
                     <p>{{ equipe.equipe1Role }}</p>
                     {% if equipe.equipe1Role2 %}
@@ -21,9 +29,16 @@
                 </div>
             </div>
             <div class="img col-lg-4 col-12" data-cv="2">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe2File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe2Name }}</strong></p>
+                    <p>{{ equipe.equipe2Role }}</p>
+                    {% if equipe.equipe2Role2 %}
+                        <p>{{ equipe.equipe2Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe2Name }}</strong></p>
                     <p>{{ equipe.equipe2Role }}</p>
                     {% if equipe.equipe2Role2 %}
@@ -32,9 +47,16 @@
                 </div>
             </div>
             <div class="img col-lg-4 col-12" data-cv="3">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe3File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe3Name }}</strong></p>
+                    <p>{{ equipe.equipe3Role }}</p>
+                    {% if equipe.equipe3Role2 %}
+                        <p>{{ equipe.equipe3Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe3Name }}</strong></p>
                     <p>{{ equipe.equipe3Role }}</p>
                     {% if equipe.equipe3Role2 %}
@@ -43,9 +65,16 @@
                 </div>
             </div>
             <div class="img col-lg-4 col-12" data-cv="4">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe4File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe4Name }}</strong></p>
+                    <p>{{ equipe.equipe4Role }}</p>
+                    {% if equipe.equipe4Role2 %}
+                        <p>{{ equipe.equipe4Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe4Name }}</strong></p>
                     <p>{{ equipe.equipe4Role }}</p>
                     {% if equipe.equipe4Role2 %}
@@ -54,9 +83,16 @@
                 </div>
             </div>
             <div class="img col-lg-4 col-12" data-cv="5">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe5File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe5Name }}</strong></p>
+                    <p>{{ equipe.equipe5Role }}</p>
+                    {% if equipe.equipe5Role2 %}
+                        <p>{{ equipe.equipe5Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe5Name }}</strong></p>
                     <p>{{ equipe.equipe5Role }}</p>
                     {% if equipe.equipe5Role2 %}
@@ -65,9 +101,16 @@
                 </div>
             </div>
             <div class="img col-lg-4 col-12" data-cv="6">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe6File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe6Name }}</strong></p>
+                    <p>{{ equipe.equipe6Role }}</p>
+                    {% if equipe.equipe6Role2 %}
+                        <p>{{ equipe.equipe6Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe6Name }}</strong></p>
                     <p>{{ equipe.equipe6Role }}</p>
                     {% if equipe.equipe6Role2 %}
@@ -76,9 +119,16 @@
                 </div>
             </div>
             <div class="img col-lg-4 col-12"data-cv="7">
-                <div class="img-overlay"></div>
+                <div class="img-overlay d-none d-lg-block d-xl-block"></div>
                 <img src="{{ vich_uploader_asset(equipe, 'equipe7File') }}"/>
-                <div class="img-content">
+                <div class="img-content d-none d-lg-block d-xl-block">
+                    <p><strong>{{ equipe.equipe7Name }}</strong></p>
+                    <p>{{ equipe.equipe7Role }}</p>
+                    {% if equipe.equipe7Role2 %}
+                        <p>{{ equipe.equipe7Role2 }}</p>
+                    {% endif %}
+                </div>
+                <div class="mobile-img-content d-lg-none d-xl-none">
                     <p><strong>{{ equipe.equipe7Name }}</strong></p>
                     <p>{{ equipe.equipe7Role }}</p>
                     {% if equipe.equipe7Role2 %}

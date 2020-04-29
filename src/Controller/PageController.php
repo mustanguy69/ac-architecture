@@ -14,7 +14,9 @@ class PageController extends AbstractController
      */
     public function homePage()
     {
-        return $this->render('pages/index.html.twig');
+        $presentation = $this->getDoctrine()->getRepository('App:Presentation')->find(1);
+
+        return $this->render('pages/index.html.twig', ['presentation' => $presentation]);
     }
 
     /**
@@ -32,9 +34,10 @@ class PageController extends AbstractController
      */
     public function equipePage()
     {
+        $presentation = $this->getDoctrine()->getRepository('App:Presentation')->find(1);
         $equipe = $this->getDoctrine()->getRepository('App:Equipe')->find(1);
 
-        return $this->render('pages/equipe.html.twig', ['equipe' => $equipe]);
+        return $this->render('pages/equipe.html.twig', ['equipe' => $equipe, 'presentation' => $presentation]);
     }
 
     /**
@@ -205,6 +208,28 @@ class PageController extends AbstractController
         $equipement = $this->getDoctrine()->getRepository('App:Equipement')->findByNot('id', $current);
 
         return $this->render('sections/carrousel-equipement.html.twig', ['reals' => $equipement]);
+    }
+
+    /**
+     * @Route("/realisations/", name="realisations-all")
+     */
+    public function allRealisationsPage()
+    {
+        $realisations = $this->getDoctrine()->getRepository('App:Realisations')->find(1);
+        $ehpad = $this->getDoctrine()->getRepository('App:EHPAD')->findBy([], [], $realisations->getDisplayLimit());
+        $individuel = $this->getDoctrine()->getRepository('App:Individuel')->findAll();
+        $collectif = $this->getDoctrine()->getRepository('App:Collectif')->findAll();
+        $cultuel = $this->getDoctrine()->getRepository('App:Cultuel')->findAll();
+        $equipement = $this->getDoctrine()->getRepository('App:Equipement')->findAll();
+        
+        return $this->render('pages/realisations.html.twig', [
+            'ehpads' => $ehpad,
+            'collectifs' => $collectif,
+            'individuels' => $individuel,
+            'cultuels' => $cultuel,
+            'equipements' => $equipement,
+            'realisation' => $realisations,
+        ]);
     }
 
     /**

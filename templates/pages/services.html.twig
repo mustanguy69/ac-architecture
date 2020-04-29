@@ -6,18 +6,19 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('dist/zoom.css') }}">
     <script src="{{ asset('dist/zoom.js') }}"></script>
     <div class="row services-page">
-        <div class="col-8">
+        <div class="d-xl-none d-lg-none mobile-header" style="background-image: url({{ vich_uploader_asset(services, 'imageFile') }})"></div>
+        <div class="col-lg-8 col-12">
             {{ services.contentHtml | raw }}
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 d-none d-xl-block d-lg-block">
             <img class="service-img" src="{{ vich_uploader_asset(services, 'imageFile') }}"/>
         </div>
-        <div class="col-8 schema">
+        <div class="col-lg-8 col-12 schema">
             {% if services.sch %}
                 <img class="schema-img" data-action="zoom" src="{{ vich_uploader_asset(services, 'schFile') }}"/>
             {% endif %}
         </div>
-        <div class="col-4 link">
+        <div class="col-4 col-12 link">
             {% if services.arrete %}
                 <p><a href="{{ vich_uploader_asset(services, 'arreteFile') }}" download><img src="{{ asset('build/pdf.png') }}"/> Téléchargez l’Arrêté de la Loi MOP</a></p>
             {% endif %}

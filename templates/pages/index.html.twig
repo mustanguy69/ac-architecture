@@ -4,8 +4,8 @@
 
 {% block body %}
     <div class="row homepage">
-        <img src="{{ asset('build/homepage.png') }}" alt="Image de la page d'accueil" />
-        <div class="info-img">
+        <img class="d-none d-xl-block d-lg-block" src="{{ asset('build/homepage.png') }}" alt="Image de la page d'accueil" />
+        <div class="info-img d-none d-xl-block d-lg-block">
             <div>
                 <h2 class="counter" data-count="240">236</h2>
                 <p>Projets</p>
@@ -22,6 +22,15 @@
                 <h2><span class="counter" data-count="53">49</span>/<span class="counter" data-count="47">43</span>%</h2>
                 <p>Logement neufs / Réhabilités</p>
             </div>
+        </div> 
+
+        <div class="btn-mobile d-xl-none d-lg-none">
+            <img src="{{ asset('build/homepage.png') }}" />
+            <a href="{{ path('realisations-all') }}">Voir nos projets</a>
+        </div>
+
+        <div class="presentation-mobile col-12 d-xl-none d-lg-none">
+            {{ presentation.contentHtml | raw }}
         </div>
     </div>
     <script>

@@ -16,6 +16,7 @@ easy_admin:
                   - { label: "L'agence - Equipe", entity: 'Equipe', params: { action: 'edit', id: 1 } }
                   - { label: "L'agence - Organisation", entity: 'Organisation', params: { action: 'edit', id: 1 } }
                   - { label: "Services", entity: 'Services', params: { action: 'edit', id: 1 } }
+                  - { label: "Réalisations", entity: 'Realisations', params: { action: 'edit', id: 1 } }
                   - { label: "Mentions Légales", entity: 'Mentions', params: { action: 'edit', id: 1 } }
                   - { label: "Contact", entity: 'Contact', params: { action: 'edit', id: 1 } }
             - label: 'Réalisations'
@@ -90,6 +91,13 @@ easy_admin:
                     - { property: 'imageFile', type: 'vich_image' }
                     - { property: 'schFile', label: "Schéma :" ,type: 'vich_image' }
                     - { property: 'arreteFile', label: "Arrêté de loi :" ,type: 'vich_file' }
+        Realisations:
+            disabled_actions: ['delete', 'list']
+            class: App\Entity\Realisations
+            form:
+                fields:
+                    - { property: 'displayLimit', label: "Nombre de realisation a afficher :" ,type: 'text' }
+                    - { property: 'imageFile', label: "Image d'entête :" ,type: 'vich_image' }
         Mentions:
             disabled_actions: ['delete', 'list']
             class: App\Entity\Mentions
@@ -103,6 +111,7 @@ easy_admin:
                 fields:
                     - { property: 'email', label: "Email pour formulaire :", type: 'text' }
                     - { property: 'address', label: "Adresse :" ,type: 'textarea' }
+                    - { property: 'imageFile', label: "Image d'entête :" ,type: 'vich_image' }
         EHPAD:
             class: App\Entity\EHPAD
             form:

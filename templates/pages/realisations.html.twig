@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réalisations{% endblock %}
+
+{% block body %}
+    <div class="row realisation-page mobile-realisation">
+        <div class="d-xl-none d-lg-none mobile-header" style="background-image: url({{ vich_uploader_asset(realisation, 'imageFile') }})"></div>
+        <div class="col-12">
+            <p class="page-title">Réalisations</p>
+            <p class="page-title">EHPAD</p>
+            {% for ehpad in ehpads %}
+                <div class="col-12">
+                    <img src="{{ vich_uploader_asset(ehpad, 'thumbnailFile') }}"/>
+                    <p>{{ ehpad.title }}</p>
+                </div>
+            {% endfor %}
+            <p class="page-title">Logements collectifs</p>
+            {% for collectif in collectifs %}
+                <div class="col-12">
+                    <img class="img" src="{{ vich_uploader_asset(collectif, 'thumbnailFile') }}"/>
+                    <p>{{ collectif.title }}</p>
+                </div>
+            {% endfor %}
+            <p class="page-title">Equipements</p>
+            {% for equipement in equipements %}
+                <div class="col-12">
+                    <img class="img" src="{{ vich_uploader_asset(equipement, 'thumbnailFile') }}"/>
+                    <p>{{ equipement.title }}</p>
+                </div>
+            {% endfor %}
+            <p class="page-title">Lieux Cultuels</p>
+            {% for cultuel in cultuels %}
+                <div class="col-12">
+                    <img class="img" src="{{ vich_uploader_asset(cultuel, 'thumbnailFile') }}"/>
+                    <p>{{ cultuel.title }}</p>
+                </div>
+            {% endfor %}
+            <p class="page-title">Logements</p>
+            {% for individuel in individuels %}
+                <div class="col-12">
+                    <img class="img" src="{{ vich_uploader_asset(individuel, 'thumbnailFile') }}"/>
+                    <p>{{ individuel.title }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
