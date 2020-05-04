@@ -8,7 +8,7 @@
     <div class="d-xl-none d-lg-none carrousel-mobile">
         {% for real in reals %}
         <div class="col-12">
-            <a href="{{ path('ehpad_view', {slug: real.slug}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
+            <a href="{{ path('equipement_view', {slug: real.slug}) }}"><img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/></a>
             <p>{{ real.title }}</p>
         </div>
         {% endfor %}
