@@ -4,10 +4,42 @@
 
 {% block body %}
     <div class="row real-page">
-        <div class="col-12">
+        <div class="col-12 d-xl-block d-lg-block">
             <p><a href="{{ path('individuels') }}" class="page-title">Logements individuels</a> > <span class="real-breadcrumb">{{ real.title }}</span></p>
         </div>
-        <div class="col-12 col-lg-8 col-md-12 col-sm-12">
+        <div class="d-xl-none d-lg-none realisation-mobile">
+            <div class="col-12">
+                <img src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>
+            </div>
+            <div class="col-12">
+                <p class="page-title">Logement individuel {{ real.title }}</p>
+            </div>
+            <div class="col-12">
+                {{ real.contentBottomHtml | raw }}
+            </div>
+            <div class="col-12 imgs">
+                <img src="{{ vich_uploader_asset(real, 'image1File') }}"/>
+                {% if real.image2 %}
+                    <img src="{{ vich_uploader_asset(real, 'image2File') }}"/>
+                {% endif %}
+                {% if real.image3 %}
+                    <img src="{{ vich_uploader_asset(real, 'image3File') }}"/>
+                {% endif %}
+                {% if real.image4 %}
+                    <img src="{{ vich_uploader_asset(real, 'image4File') }}"/>
+                {% endif %}
+                {% if real.image5 %}
+                    <img src="{{ vich_uploader_asset(real, 'image5File') }}"/>
+                {% endif %}
+                {% if real.image6 %}
+                    <img src="{{ vich_uploader_asset(real, 'image6File') }}"/>
+                {% endif %}
+            </div>
+             <div class="col-12">
+                {{ real.contentRightHtml | raw }}
+            </div>
+        </div>
+        <div class="col-12 col-lg-8 col-md-12 col-sm-12 d-none d-xl-block d-lg-block">
             <div class="owl-carousel owl-real">
                 <img src="{{ vich_uploader_asset(real, 'image1File') }}"/>
                 {% if real.image2 %}
@@ -38,11 +70,11 @@
                 });
             </script>
         </div>
-        <div class="col-12 col-lg-4 col-md-12 col-sm-12">
+        <div class="col-12 col-lg-4 col-md-12 col-sm-12 d-none d-xl-block d-lg-block">
             {{ real.contentRightHtml | raw }}
         </div>
 
-        <div class="col-12 col-lg-8 col-md-12 col-sm-12 bottom">
+        <div class="col-12 col-lg-8 col-md-12 col-sm-12 bottom d-none d-xl-block d-lg-block">
             {{ real.contentBottomHtml | raw }}
         </div>
 
