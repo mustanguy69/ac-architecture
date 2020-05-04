@@ -38,6 +38,11 @@ class Realisations
      */
     private $enteteFile;
 
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     * @var \DateTime
+     */
+    private $updatedAt;
 
     public function getId(): ?int
     {
