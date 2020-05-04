@@ -19,7 +19,7 @@
             <p class="page-title">Logements collectifs</p>
             {% for collectif in collectifs %}
                 <div class="col-12">
-                    <a href="{{ path('ehpad_view', {slug: collectif.slug}) }}">
+                    <a href="{{ path('collectif_view', {slug: collectif.slug}) }}">
                         <img class="img" src="{{ vich_uploader_asset(collectif, 'thumbnailFile') }}"/>
                         <p>{{ collectif.title }}</p>
                     </a>
@@ -28,7 +28,7 @@
             <p class="page-title">Equipements</p>
             {% for equipement in equipements %}
                 <div class="col-12">
-                    <a href="{{ path('ehpad_view', {slug: equipement.slug}) }}">
+                    <a href="{{ path('equipement_view', {slug: equipement.slug}) }}">
                         <img class="img" src="{{ vich_uploader_asset(equipement, 'thumbnailFile') }}"/>
                         <p>{{ equipement.title }}</p>
                     </a>
@@ -37,7 +37,7 @@
             <p class="page-title">Lieux Cultuels</p>
             {% for cultuel in cultuels %}
                 <div class="col-12">
-                    <a href="{{ path('ehpad_view', {slug: cultuel.slug}) }}">
+                    <a href="{{ path('cultuel_view', {slug: cultuel.slug}) }}">
                         <img class="img" src="{{ vich_uploader_asset(cultuel, 'thumbnailFile') }}"/>
                         <p>{{ cultuel.title }}</p>
                     </a>
@@ -46,7 +46,7 @@
             <p class="page-title">Logements</p>
             {% for individuel in individuels %}
                 <div class="col-12">
-                    <a href="{{ path('ehpad_view', {slug: individuel.slug}) }}">
+                    <a href="{{ path('individuel_view', {slug: individuel.slug}) }}">
                         <img class="img" src="{{ vich_uploader_asset(individuel, 'thumbnailFile') }}"/>
                         <p>{{ individuel.title }}</p>
                     </a>
