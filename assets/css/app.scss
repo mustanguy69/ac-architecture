@@ -104,10 +104,14 @@ strong {
             border-radius: 0;
             top: 100%;
             transition: 0.3s all ease-in-out;
+            left: 25px;
         }
 
         .dropdown-toggle {
-            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
             &:after {
                 visibility: hidden;
                 display: none;
