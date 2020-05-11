@@ -7,7 +7,7 @@
         <div class="col-12 realisation-img">
             <p class="page-title">Logement collectifs</p>
             {% for real in collectif %}
-                <div class="col-lg-4 col-12 col-md-11 img" {% if loop.index % 3 == 0 %}style="margin-right: 0"{% endif %}>
+                <div class="col-lg-4 col-12 col-md-11 img">
                     <a href="{{ path('collectif_view', {slug: real.slug}) }}">
                         <div class="img-overlay"></div>
                         <img class="img-header" src="{{ vich_uploader_asset(real, 'thumbnailFile') }}"/>

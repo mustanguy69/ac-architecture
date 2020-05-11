@@ -544,7 +544,8 @@ strong {
             padding: 0;
             display: inline-block;
             margin-bottom: 50px;
-            margin-right: 50px;
+            margin-right: -4px;
+            padding: 20px;
             cursor: pointer;
             img {
                 width: 100%;
@@ -567,10 +568,10 @@ strong {
                 position: absolute;
                 //height: 99%;
                 //width: 90%;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                right: 0;
+                left: 20px;
+                top: 20px;
+                bottom: 20px;
+                right: 20px;
                 opacity: 0;
                 -webkit-transition: all 0.4s ease-in-out 0s;
                 -moz-transition: all 0.4s ease-in-out 0s;
