@@ -513,10 +513,6 @@ strong {
 }
 
 .services-page {
-    p {
-        font-size: 11pt;
-    }
-
     .service-img, .schema-img {
         width:100%;
     }
@@ -543,7 +539,6 @@ strong {
             position: relative;
             padding: 0;
             display: inline-block;
-            margin-bottom: 50px;
             margin-right: -4px;
             padding: 20px;
             cursor: pointer;
