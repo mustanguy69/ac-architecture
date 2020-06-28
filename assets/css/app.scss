@@ -616,6 +616,10 @@ strong {
     }
 
     .realisation-mobile {
+        padding: 0;
+        .owl-carousel {
+            margin-bottom: -40px;
+        }
         .col-12:first-of-type {
             img {
                 width: 100%;
