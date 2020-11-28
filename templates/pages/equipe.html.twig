@@ -136,6 +136,66 @@
                     {% endif %}
                 </div>
             </div>
+            {% if equipe.equipe8Name %}
+                <div class="img col-lg-4 col-12"data-cv="8">
+                    <div class="img-overlay d-none d-lg-block d-xl-block"></div>
+                    <img src="{{ vich_uploader_asset(equipe, 'equipe8File') }}"/>
+                    <div class="img-content d-none d-lg-block d-xl-block">
+                        <p><strong>{{ equipe.equipe8Name }}</strong></p>
+                        <p>{{ equipe.equipe8Role }}</p>
+                        {% if equipe.equipe8Role2 %}
+                            <p>{{ equipe.equipe8Role2 }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="mobile-img-content d-lg-none d-xl-none">
+                        <p><strong>{{ equipe.equipe8Name }}</strong></p>
+                        <p>{{ equipe.equipe8Role }}</p>
+                        {% if equipe.equipe8Role2 %}
+                            <p>{{ equipe.equipe8Role2 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if equipe.equipe9Name %}
+                <div class="img col-lg-4 col-12"data-cv="9">
+                    <div class="img-overlay d-none d-lg-block d-xl-block"></div>
+                    <img src="{{ vich_uploader_asset(equipe, 'equipe9File') }}"/>
+                    <div class="img-content d-none d-lg-block d-xl-block">
+                        <p><strong>{{ equipe.equipe9Name }}</strong></p>
+                        <p>{{ equipe.equipe9Role }}</p>
+                        {% if equipe.equipe9Role2 %}
+                            <p>{{ equipe.equipe9Role2 }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="mobile-img-content d-lg-none d-xl-none">
+                        <p><strong>{{ equipe.equipe9Name }}</strong></p>
+                        <p>{{ equipe.equipe9Role }}</p>
+                        {% if equipe.equipe9Role2 %}
+                            <p>{{ equipe.equipe9Role2 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if equipe.equipe10Name %}
+                <div class="img col-lg-4 col-12"data-cv="10">
+                    <div class="img-overlay d-none d-lg-block d-xl-block"></div>
+                    <img src="{{ vich_uploader_asset(equipe, 'equipe10File') }}"/>
+                    <div class="img-content d-none d-lg-block d-xl-block">
+                        <p><strong>{{ equipe.equipe10Name }}</strong></p>
+                        <p>{{ equipe.equipe10Role }}</p>
+                        {% if equipe.equipe10Role2 %}
+                            <p>{{ equipe.equipe10Role2 }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="mobile-img-content d-lg-none d-xl-none">
+                        <p><strong>{{ equipe.equipe10Name }}</strong></p>
+                        <p>{{ equipe.equipe10Role }}</p>
+                        {% if equipe.equipe10Role2 %}
+                            <p>{{ equipe.equipe10Role2 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
             <div class="col-8 cv-equipe cv-equipe-1">
                 {{ equipe.equipe1Cv | raw }}
             </div>
@@ -157,6 +217,21 @@
             <div class="col-8 cv-equipe cv-equipe-7">
                 {{ equipe.equipe7Cv | raw }}
             </div>
+            {% if equipe.equipe8Cv %}
+                <div class="col-8 cv-equipe cv-equipe-8">
+                    {{ equipe.equipe8Cv | raw }}
+                </div>
+            {% endif %}
+            {% if equipe.equipe9Cv %}
+                <div class="col-8 cv-equipe cv-equipe-9">
+                    {{ equipe.equipe9Cv | raw }}
+                </div>
+            {% endif %}
+            {% if equipe.equipe10Cv %}
+                <div class="col-8 cv-equipe cv-equipe-10">
+                    {{ equipe.equipe10Cv | raw }}
+                </div>
+            {% endif %}
         </div>
     </div>
     <script>

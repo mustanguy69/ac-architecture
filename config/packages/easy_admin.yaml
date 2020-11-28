@@ -75,6 +75,21 @@ easy_admin:
                     - { property: 'equipe7Role', label: "Membre n°7 Rôle :", type: 'text' }
                     - { property: 'equipe7Role2', label: "Membre n°7 Rôle 2 :", type: 'text' }
                     - { property: 'equipe7Cv', label: "Membre n°7 CV :" ,type: 'textarea' }
+                    - { property: 'equipe8File', label: "Membre n°8 Photo :", type: 'vich_image' }
+                    - { property: 'equipe8Name', label: "Membre n°8 Nom :", type: 'text' }
+                    - { property: 'equipe8Role', label: "Membre n°8 Rôle :", type: 'text' }
+                    - { property: 'equipe8Role2', label: "Membre n°8 Rôle 2 :", type: 'text' }
+                    - { property: 'equipe8Cv', label: "Membre n°8 CV :" ,type: 'textarea' }
+                    - { property: 'equipe9File', label: "Membre n°9 Photo :", type: 'vich_image' }
+                    - { property: 'equipe9Name', label: "Membre n°9 Nom :", type: 'text' }
+                    - { property: 'equipe9Role', label: "Membre n°9 Rôle :", type: 'text' }
+                    - { property: 'equipe9Role2', label: "Membre n°9 Rôle 2 :", type: 'text' }
+                    - { property: 'equipe9Cv', label: "Membre n°9 CV :" ,type: 'textarea' }
+                    - { property: 'equipe10File', label: "Membre n°10 Photo :", type: 'vich_image' }
+                    - { property: 'equipe10Name', label: "Membre n°10 Nom :", type: 'text' }
+                    - { property: 'equipe10Role', label: "Membre n°10 Rôle :", type: 'text' }
+                    - { property: 'equipe10Role2', label: "Membre n°10 Rôle 2 :", type: 'text' }
+                    - { property: 'equipe10Cv', label: "Membre n°10 CV :" ,type: 'textarea' }
         Organisation:
             disabled_actions: ['delete', 'list']
             class: App\Entity\Organisation

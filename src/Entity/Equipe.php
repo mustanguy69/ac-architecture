@@ -242,6 +242,101 @@ class Equipe
     private $equipe7Cv;
 
 
+        /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe8;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe8Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe8Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe8Role2;
+
+    /**
+    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
+    * @var File
+    */
+    private $equipe8File;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $equipe8Cv;
+
+
+        /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe9;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe9Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe9Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe9Role2;
+
+    /**
+    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
+    * @var File
+    */
+    private $equipe9File;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $equipe9Cv;
+
+
+        /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe10;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe10Name;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe10Role;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $equipe10Role2;
+
+    /**
+    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
+    * @var File
+    */
+    private $equipe10File;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $equipe10Cv;
+
    /**
     * @ORM\Column(type="datetime")
     * @var \DateTime
@@ -807,6 +902,240 @@ class Equipe
     public function setEquipe7Cv(string $equipe7Cv): self
     {
         $this->equipe7Cv = $equipe7Cv;
+
+        return $this;
+    }
+
+    public function setEquipe8File(File $image = null)
+    {
+       $this->equipe8File = $image;
+
+       // VERY IMPORTANT:
+       // It is required that at least one field changes if you are using Doctrine,
+       // otherwise the event listeners won't be called and the file is lost
+       if ($image) {
+           // if 'updatedAt' is not defined in your entity, use another property
+           $this->updatedAt = new \DateTime('now');
+       }
+    }
+
+    public function getEquipe8File()
+    {
+       return $this->equipe8File;
+    }
+
+    public function getEquipe8(): ?string
+    {
+        return $this->equipe8;
+    }
+
+    public function setEquipe8(?string $equipe8): self
+    {
+        $this->equipe8 = $equipe8;
+
+        return $this;
+    }
+
+    public function getEquipe8Name(): ?string
+    {
+        return $this->equipe8Name;
+    }
+
+    public function setEquipe8Name(?string $equipe8Name): self
+    {
+        $this->equipe8Name = $equipe8Name;
+
+        return $this;
+    }
+
+    public function getEquipe8Role(): ?string
+    {
+        return $this->equipe8Role;
+    }
+
+    public function setEquipe8Role(?string $equipe8Role): self
+    {
+        $this->equipe8Role = $equipe8Role;
+
+        return $this;
+    }
+
+    public function getEquipe8Role2(): ?string
+    {
+        return $this->equipe8Role2;
+    }
+
+    public function setEquipe8Role2(?string $equipe8Role2): self
+    {
+        $this->equipe8Role2 = $equipe8Role2;
+
+        return $this;
+    }
+
+    public function getEquipe8Cv(): ?string
+    {
+        return $this->equipe8Cv;
+    }
+
+    public function setEquipe8Cv(string $equipe8Cv): self
+    {
+        $this->equipe8Cv = $equipe8Cv;
+
+        return $this;
+    }
+
+    public function setEquipe9File(File $image = null)
+    {
+       $this->equipe9File = $image;
+
+       // VERY IMPORTANT:
+       // It is required that at least one field changes if you are using Doctrine,
+       // otherwise the event listeners won't be called and the file is lost
+       if ($image) {
+           // if 'updatedAt' is not defined in your entity, use another property
+           $this->updatedAt = new \DateTime('now');
+       }
+    }
+
+    public function getEquipe9File()
+    {
+       return $this->equipe9File;
+    }
+
+    public function getEquipe9(): ?string
+    {
+        return $this->equipe9;
+    }
+
+    public function setEquipe9(?string $equipe9): self
+    {
+        $this->equipe9 = $equipe9;
+
+        return $this;
+    }
+
+    public function getEquipe9Name(): ?string
+    {
+        return $this->equipe9Name;
+    }
+
+    public function setEquipe9Name(?string $equipe9Name): self
+    {
+        $this->equipe9Name = $equipe9Name;
+
+        return $this;
+    }
+
+    public function getEquipe9Role(): ?string
+    {
+        return $this->equipe9Role;
+    }
+
+    public function setEquipe9Role(?string $equipe9Role): self
+    {
+        $this->equipe9Role = $equipe9Role;
+
+        return $this;
+    }
+
+    public function getEquipe9Role2(): ?string
+    {
+        return $this->equipe9Role2;
+    }
+
+    public function setEquipe9Role2(?string $equipe9Role2): self
+    {
+        $this->equipe9Role2 = $equipe9Role2;
+
+        return $this;
+    }
+
+    public function getEquipe9Cv(): ?string
+    {
+        return $this->equipe9Cv;
+    }
+
+    public function setEquipe9Cv(string $equipe9Cv): self
+    {
+        $this->equipe9Cv = $equipe9Cv;
+
+        return $this;
+    }
+
+    public function setEquipe10File(File $image = null)
+    {
+       $this->equipe10File = $image;
+
+       // VERY IMPORTANT:
+       // It is required that at least one field changes if you are using Doctrine,
+       // otherwise the event listeners won't be called and the file is lost
+       if ($image) {
+           // if 'updatedAt' is not defined in your entity, use another property
+           $this->updatedAt = new \DateTime('now');
+       }
+    }
+
+    public function getEquipe10File()
+    {
+       return $this->equipe10File;
+    }
+
+    public function getEquipe10(): ?string
+    {
+        return $this->equipe10;
+    }
+
+    public function setEquipe10(?string $equipe10): self
+    {
+        $this->equipe10 = $equipe10;
+
+        return $this;
+    }
+
+    public function getEquipe10Name(): ?string
+    {
+        return $this->equipe10Name;
+    }
+
+    public function setEquipe10Name(?string $equipe10Name): self
+    {
+        $this->equipe10Name = $equipe10Name;
+
+        return $this;
+    }
+
+    public function getEquipe10Role(): ?string
+    {
+        return $this->equipe10Role;
+    }
+
+    public function setEquipe10Role(?string $equipe10Role): self
+    {
+        $this->equipe10Role = $equipe10Role;
+
+        return $this;
+    }
+
+    public function getEquipe10Role2(): ?string
+    {
+        return $this->equipe10Role2;
+    }
+
+    public function setEquipe10Role2(?string $equipe10Role2): self
+    {
+        $this->equipe10Role2 = $equipe10Role2;
+
+        return $this;
+    }
+
+    public function getEquipe10Cv(): ?string
+    {
+        return $this->equipe10Cv;
+    }
+
+    public function setEquipe10Cv(string $equipe10Cv): self
+    {
+        $this->equipe10Cv = $equipe10Cv;
 
         return $this;
     }
