@@ -263,7 +263,7 @@ class Equipe
     private $equipe8Role2;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
+    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe8")
     * @var File
     */
     private $equipe8File;
@@ -295,7 +295,7 @@ class Equipe
     private $equipe9Role2;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
+    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe9")
     * @var File
     */
     private $equipe9File;
@@ -327,7 +327,7 @@ class Equipe
     private $equipe10Role2;
 
     /**
-    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe7")
+    * @Vich\UploadableField(mapping="images", fileNameProperty="equipe10")
     * @var File
     */
     private $equipe10File;
