@@ -5,7 +5,7 @@
 {% block body %}
     <div class="row realisation-page">
         <div class="col-12 realisation-img">
-            <p class="page-title">Logement individuels</p>
+            <p class="page-title">Logements individuels</p>
             {% for real in individuel %}
                 <div class="col-lg-4 col-12 col-md-11 img">
                     <a href="{{ path('individuel_view', {slug: real.slug}) }}">
