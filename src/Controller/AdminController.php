@@ -34,7 +34,7 @@ class AdminController extends EasyAdminController
         $refererAction = $this->request->query->get('action');
         // from new|edit action, redirect to edit if possible
         if (in_array($refererAction, array('new', 'edit')) && $this->isActionAllowed('edit')) {
-            $this->addFlash('success', 'Sauvegarde éffectuée');
+            $this->addFlash('success', 'Sauvegarde effectuée');
             return $this->redirectToRoute('easyadmin', array(
                 'action' => 'edit',
                 'entity' => $this->entity['name'],

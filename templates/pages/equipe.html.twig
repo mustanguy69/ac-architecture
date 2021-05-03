@@ -4,7 +4,7 @@
 
 {% block body %}
     <div class="row equipe-page">
-        <div class="d-xl-none d-lg-none mobile-header" style="background-image: url({{ vich_uploader_asset(presentation, 'imageFile') }})"></div>
+        <div class="d-xl-none d-lg-none mobile-header" style="background-image: url('{{ vich_uploader_asset(presentation, 'imageFile') }}')"></div>
         <div class="col-lg-6 col-12">
             {{ equipe.contentHtml | raw }}
             <br>
